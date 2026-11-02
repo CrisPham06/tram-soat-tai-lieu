@@ -1,0 +1,1241 @@
+{
+  "command": "node tools/dataset-browser.mjs",
+  "at": "2026-11-02T02:28:10.457Z",
+  "code_revision": "eecf96adb098c0e463419182eaad4ff0204f7f04",
+  "node": "v24.14.0",
+  "os": "Windows_NT 10.0.26300 x64",
+  "rows": [
+    {
+      "id": "N01",
+      "destination": "national",
+      "expected": "A",
+      "actual": "A",
+      "match": true
+    },
+    {
+      "id": "N01",
+      "destination": "internal",
+      "expected": "A",
+      "actual": "A",
+      "match": true
+    },
+    {
+      "id": "N01",
+      "destination": "ai",
+      "expected": "A",
+      "actual": "A",
+      "match": true
+    },
+    {
+      "id": "N01",
+      "destination": "outside",
+      "expected": "A",
+      "actual": "A",
+      "match": true
+    },
+    {
+      "id": "N02",
+      "destination": "national",
+      "expected": "A",
+      "actual": "A",
+      "match": true
+    },
+    {
+      "id": "N02",
+      "destination": "internal",
+      "expected": "A",
+      "actual": "A",
+      "match": true
+    },
+    {
+      "id": "N02",
+      "destination": "ai",
+      "expected": "A",
+      "actual": "A",
+      "match": true
+    },
+    {
+      "id": "N02",
+      "destination": "outside",
+      "expected": "A",
+      "actual": "A",
+      "match": true
+    },
+    {
+      "id": "N03",
+      "destination": "national",
+      "expected": "A",
+      "actual": "A",
+      "match": true
+    },
+    {
+      "id": "N03",
+      "destination": "internal",
+      "expected": "A",
+      "actual": "A",
+      "match": true
+    },
+    {
+      "id": "N03",
+      "destination": "ai",
+      "expected": "A",
+      "actual": "A",
+      "match": true
+    },
+    {
+      "id": "N03",
+      "destination": "outside",
+      "expected": "A",
+      "actual": "A",
+      "match": true
+    },
+    {
+      "id": "N04",
+      "destination": "national",
+      "expected": "A",
+      "actual": "A",
+      "match": true
+    },
+    {
+      "id": "N04",
+      "destination": "internal",
+      "expected": "A",
+      "actual": "A",
+      "match": true
+    },
+    {
+      "id": "N04",
+      "destination": "ai",
+      "expected": "A",
+      "actual": "A",
+      "match": true
+    },
+    {
+      "id": "N04",
+      "destination": "outside",
+      "expected": "A",
+      "actual": "A",
+      "match": true
+    },
+    {
+      "id": "N05",
+      "destination": "national",
+      "expected": "A",
+      "actual": "A",
+      "match": true
+    },
+    {
+      "id": "N05",
+      "destination": "internal",
+      "expected": "A",
+      "actual": "A",
+      "match": true
+    },
+    {
+      "id": "N05",
+      "destination": "ai",
+      "expected": "A",
+      "actual": "A",
+      "match": true
+    },
+    {
+      "id": "N05",
+      "destination": "outside",
+      "expected": "A",
+      "actual": "A",
+      "match": true
+    },
+    {
+      "id": "N06",
+      "destination": "national",
+      "expected": "A",
+      "actual": "A",
+      "match": true
+    },
+    {
+      "id": "N06",
+      "destination": "internal",
+      "expected": "A",
+      "actual": "A",
+      "match": true
+    },
+    {
+      "id": "N06",
+      "destination": "ai",
+      "expected": "A",
+      "actual": "A",
+      "match": true
+    },
+    {
+      "id": "N06",
+      "destination": "outside",
+      "expected": "A",
+      "actual": "A",
+      "match": true
+    },
+    {
+      "id": "N07",
+      "destination": "national",
+      "expected": "A",
+      "actual": "A",
+      "match": true
+    },
+    {
+      "id": "N07",
+      "destination": "internal",
+      "expected": "A",
+      "actual": "A",
+      "match": true
+    },
+    {
+      "id": "N07",
+      "destination": "ai",
+      "expected": "A",
+      "actual": "A",
+      "match": true
+    },
+    {
+      "id": "N07",
+      "destination": "outside",
+      "expected": "A",
+      "actual": "A",
+      "match": true
+    },
+    {
+      "id": "N08",
+      "destination": "national",
+      "expected": "A",
+      "actual": "A",
+      "match": true
+    },
+    {
+      "id": "N08",
+      "destination": "internal",
+      "expected": "A",
+      "actual": "A",
+      "match": true
+    },
+    {
+      "id": "N08",
+      "destination": "ai",
+      "expected": "A",
+      "actual": "A",
+      "match": true
+    },
+    {
+      "id": "N08",
+      "destination": "outside",
+      "expected": "A",
+      "actual": "A",
+      "match": true
+    },
+    {
+      "id": "N09",
+      "destination": "national",
+      "expected": "A",
+      "actual": "A",
+      "match": true
+    },
+    {
+      "id": "N09",
+      "destination": "internal",
+      "expected": "A",
+      "actual": "A",
+      "match": true
+    },
+    {
+      "id": "N09",
+      "destination": "ai",
+      "expected": "A",
+      "actual": "A",
+      "match": true
+    },
+    {
+      "id": "N09",
+      "destination": "outside",
+      "expected": "A",
+      "actual": "A",
+      "match": true
+    },
+    {
+      "id": "N10",
+      "destination": "national",
+      "expected": "A",
+      "actual": "A",
+      "match": true
+    },
+    {
+      "id": "N10",
+      "destination": "internal",
+      "expected": "A",
+      "actual": "A",
+      "match": true
+    },
+    {
+      "id": "N10",
+      "destination": "ai",
+      "expected": "A",
+      "actual": "A",
+      "match": true
+    },
+    {
+      "id": "N10",
+      "destination": "outside",
+      "expected": "A",
+      "actual": "A",
+      "match": true
+    },
+    {
+      "id": "N11",
+      "destination": "national",
+      "expected": "A",
+      "actual": "A",
+      "match": true
+    },
+    {
+      "id": "N11",
+      "destination": "internal",
+      "expected": "A",
+      "actual": "A",
+      "match": true
+    },
+    {
+      "id": "N11",
+      "destination": "ai",
+      "expected": "A",
+      "actual": "A",
+      "match": true
+    },
+    {
+      "id": "N11",
+      "destination": "outside",
+      "expected": "A",
+      "actual": "A",
+      "match": true
+    },
+    {
+      "id": "N12",
+      "destination": "national",
+      "expected": "A",
+      "actual": "A",
+      "match": true
+    },
+    {
+      "id": "N12",
+      "destination": "internal",
+      "expected": "A",
+      "actual": "A",
+      "match": true
+    },
+    {
+      "id": "N12",
+      "destination": "ai",
+      "expected": "A",
+      "actual": "A",
+      "match": true
+    },
+    {
+      "id": "N12",
+      "destination": "outside",
+      "expected": "A",
+      "actual": "A",
+      "match": true
+    },
+    {
+      "id": "M01",
+      "destination": "national",
+      "expected": "C",
+      "actual": "C",
+      "match": true
+    },
+    {
+      "id": "M01",
+      "destination": "internal",
+      "expected": "C",
+      "actual": "C",
+      "match": true
+    },
+    {
+      "id": "M01",
+      "destination": "ai",
+      "expected": "C",
+      "actual": "C",
+      "match": true
+    },
+    {
+      "id": "M01",
+      "destination": "outside",
+      "expected": "C",
+      "actual": "C",
+      "match": true
+    },
+    {
+      "id": "M02",
+      "destination": "national",
+      "expected": "C",
+      "actual": "C",
+      "match": true
+    },
+    {
+      "id": "M02",
+      "destination": "internal",
+      "expected": "C",
+      "actual": "C",
+      "match": true
+    },
+    {
+      "id": "M02",
+      "destination": "ai",
+      "expected": "C",
+      "actual": "C",
+      "match": true
+    },
+    {
+      "id": "M02",
+      "destination": "outside",
+      "expected": "C",
+      "actual": "C",
+      "match": true
+    },
+    {
+      "id": "M03",
+      "destination": "national",
+      "expected": "C",
+      "actual": "C",
+      "match": true
+    },
+    {
+      "id": "M03",
+      "destination": "internal",
+      "expected": "C",
+      "actual": "C",
+      "match": true
+    },
+    {
+      "id": "M03",
+      "destination": "ai",
+      "expected": "C",
+      "actual": "C",
+      "match": true
+    },
+    {
+      "id": "M03",
+      "destination": "outside",
+      "expected": "C",
+      "actual": "C",
+      "match": true
+    },
+    {
+      "id": "M04",
+      "destination": "national",
+      "expected": "C",
+      "actual": "C",
+      "match": true
+    },
+    {
+      "id": "M04",
+      "destination": "internal",
+      "expected": "C",
+      "actual": "C",
+      "match": true
+    },
+    {
+      "id": "M04",
+      "destination": "ai",
+      "expected": "C",
+      "actual": "C",
+      "match": true
+    },
+    {
+      "id": "M04",
+      "destination": "outside",
+      "expected": "C",
+      "actual": "C",
+      "match": true
+    },
+    {
+      "id": "M05",
+      "destination": "national",
+      "expected": "C",
+      "actual": "C",
+      "match": true
+    },
+    {
+      "id": "M05",
+      "destination": "internal",
+      "expected": "C",
+      "actual": "C",
+      "match": true
+    },
+    {
+      "id": "M05",
+      "destination": "ai",
+      "expected": "C",
+      "actual": "C",
+      "match": true
+    },
+    {
+      "id": "M05",
+      "destination": "outside",
+      "expected": "C",
+      "actual": "C",
+      "match": true
+    },
+    {
+      "id": "M06",
+      "destination": "national",
+      "expected": "C",
+      "actual": "C",
+      "match": true
+    },
+    {
+      "id": "M06",
+      "destination": "internal",
+      "expected": "C",
+      "actual": "C",
+      "match": true
+    },
+    {
+      "id": "M06",
+      "destination": "ai",
+      "expected": "C",
+      "actual": "C",
+      "match": true
+    },
+    {
+      "id": "M06",
+      "destination": "outside",
+      "expected": "C",
+      "actual": "C",
+      "match": true
+    },
+    {
+      "id": "K01",
+      "destination": "national",
+      "expected": "C",
+      "actual": "C",
+      "match": true
+    },
+    {
+      "id": "K01",
+      "destination": "internal",
+      "expected": "C",
+      "actual": "C",
+      "match": true
+    },
+    {
+      "id": "K01",
+      "destination": "ai",
+      "expected": "C",
+      "actual": "C",
+      "match": true
+    },
+    {
+      "id": "K01",
+      "destination": "outside",
+      "expected": "C",
+      "actual": "C",
+      "match": true
+    },
+    {
+      "id": "K02",
+      "destination": "national",
+      "expected": "C",
+      "actual": "C",
+      "match": true
+    },
+    {
+      "id": "K02",
+      "destination": "internal",
+      "expected": "C",
+      "actual": "C",
+      "match": true
+    },
+    {
+      "id": "K02",
+      "destination": "ai",
+      "expected": "C",
+      "actual": "C",
+      "match": true
+    },
+    {
+      "id": "K02",
+      "destination": "outside",
+      "expected": "C",
+      "actual": "C",
+      "match": true
+    },
+    {
+      "id": "K03",
+      "destination": "national",
+      "expected": "C",
+      "actual": "C",
+      "match": true
+    },
+    {
+      "id": "K03",
+      "destination": "internal",
+      "expected": "C",
+      "actual": "C",
+      "match": true
+    },
+    {
+      "id": "K03",
+      "destination": "ai",
+      "expected": "C",
+      "actual": "C",
+      "match": true
+    },
+    {
+      "id": "K03",
+      "destination": "outside",
+      "expected": "C",
+      "actual": "C",
+      "match": true
+    },
+    {
+      "id": "K04",
+      "destination": "national",
+      "expected": "C",
+      "actual": "C",
+      "match": true
+    },
+    {
+      "id": "K04",
+      "destination": "internal",
+      "expected": "C",
+      "actual": "C",
+      "match": true
+    },
+    {
+      "id": "K04",
+      "destination": "ai",
+      "expected": "C",
+      "actual": "C",
+      "match": true
+    },
+    {
+      "id": "K04",
+      "destination": "outside",
+      "expected": "C",
+      "actual": "C",
+      "match": true
+    },
+    {
+      "id": "P01",
+      "destination": "national",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "P01",
+      "destination": "internal",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "P01",
+      "destination": "ai",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "P01",
+      "destination": "outside",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "P02",
+      "destination": "national",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "P02",
+      "destination": "internal",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "P02",
+      "destination": "ai",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "P02",
+      "destination": "outside",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "P03",
+      "destination": "national",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "P03",
+      "destination": "internal",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "P03",
+      "destination": "ai",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "P03",
+      "destination": "outside",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "P04",
+      "destination": "national",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "P04",
+      "destination": "internal",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "P04",
+      "destination": "ai",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "P04",
+      "destination": "outside",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "P05",
+      "destination": "national",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "P05",
+      "destination": "internal",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "P05",
+      "destination": "ai",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "P05",
+      "destination": "outside",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "P06",
+      "destination": "national",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "P06",
+      "destination": "internal",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "P06",
+      "destination": "ai",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "P06",
+      "destination": "outside",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "W01",
+      "destination": "national",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "W01",
+      "destination": "internal",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "W01",
+      "destination": "ai",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "W01",
+      "destination": "outside",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "W02",
+      "destination": "national",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "W02",
+      "destination": "internal",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "W02",
+      "destination": "ai",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "W02",
+      "destination": "outside",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "W03",
+      "destination": "national",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "W03",
+      "destination": "internal",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "W03",
+      "destination": "ai",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "W03",
+      "destination": "outside",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "W04",
+      "destination": "national",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "W04",
+      "destination": "internal",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "W04",
+      "destination": "ai",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "W04",
+      "destination": "outside",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "E01",
+      "destination": "national",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "E01",
+      "destination": "internal",
+      "expected": "A",
+      "actual": "A",
+      "match": true
+    },
+    {
+      "id": "E01",
+      "destination": "ai",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "E01",
+      "destination": "outside",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "E02",
+      "destination": "national",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "E02",
+      "destination": "internal",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "E02",
+      "destination": "ai",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "E02",
+      "destination": "outside",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "E03",
+      "destination": "national",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "E03",
+      "destination": "internal",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "E03",
+      "destination": "ai",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "E03",
+      "destination": "outside",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "E04",
+      "destination": "national",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "E04",
+      "destination": "internal",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "E04",
+      "destination": "ai",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "E04",
+      "destination": "outside",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "E05",
+      "destination": "national",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "E05",
+      "destination": "internal",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "E05",
+      "destination": "ai",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "E05",
+      "destination": "outside",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "E06",
+      "destination": "national",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "E06",
+      "destination": "internal",
+      "expected": "A",
+      "actual": "A",
+      "match": true
+    },
+    {
+      "id": "E06",
+      "destination": "ai",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "E06",
+      "destination": "outside",
+      "expected": "B",
+      "actual": "B",
+      "match": true
+    },
+    {
+      "id": "U01",
+      "destination": "national",
+      "expected": "C",
+      "actual": "C",
+      "match": true
+    },
+    {
+      "id": "U01",
+      "destination": "internal",
+      "expected": "C",
+      "actual": "C",
+      "match": true
+    },
+    {
+      "id": "U01",
+      "destination": "ai",
+      "expected": "C",
+      "actual": "C",
+      "match": true
+    },
+    {
+      "id": "U01",
+      "destination": "outside",
+      "expected": "C",
+      "actual": "C",
+      "match": true
+    },
+    {
+      "id": "U02",
+      "destination": "national",
+      "expected": "C",
+      "actual": "C",
+      "match": true
+    },
+    {
+      "id": "U02",
+      "destination": "internal",
+      "expected": "C",
+      "actual": "C",
+      "match": true
+    },
+    {
+      "id": "U02",
+      "destination": "ai",
+      "expected": "C",
+      "actual": "C",
+      "match": true
+    },
+    {
+      "id": "U02",
+      "destination": "outside",
+      "expected": "C",
+      "actual": "C",
+      "match": true
+    },
+    {
+      "id": "X01",
+      "destination": "national",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "match": true
+    },
+    {
+      "id": "X01",
+      "destination": "internal",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "match": true
+    },
+    {
+      "id": "X01",
+      "destination": "ai",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "match": true
+    },
+    {
+      "id": "X01",
+      "destination": "outside",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "match": true
+    },
+    {
+      "id": "X02",
+      "destination": "national",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "match": true
+    },
+    {
+      "id": "X02",
+      "destination": "internal",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "match": true
+    },
+    {
+      "id": "X02",
+      "destination": "ai",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "match": true
+    },
+    {
+      "id": "X02",
+      "destination": "outside",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "match": true
+    },
+    {
+      "id": "X03",
+      "destination": "national",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "match": true
+    },
+    {
+      "id": "X03",
+      "destination": "internal",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "match": true
+    },
+    {
+      "id": "X03",
+      "destination": "ai",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "match": true
+    },
+    {
+      "id": "X03",
+      "destination": "outside",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "match": true
+    },
+    {
+      "id": "X04",
+      "destination": "national",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "match": true
+    },
+    {
+      "id": "X04",
+      "destination": "internal",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "match": true
+    },
+    {
+      "id": "X04",
+      "destination": "ai",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "match": true
+    },
+    {
+      "id": "X04",
+      "destination": "outside",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "match": true
+    }
+  ]
+}

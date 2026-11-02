@@ -1,0 +1,9 @@
+{
+  "command": "npm run build:web",
+  "at": "2026-11-02T02:28:13.493Z",
+  "code_revision": "eecf96adb098c0e463419182eaad4ff0204f7f04",
+  "node": "v24.14.0",
+  "os": "Windows_NT 10.0.26300 x64",
+  "csp": "default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data: blob:; font-src 'self'; connect-src 'none'; worker-src 'self' blob:; form-action 'none'; base-uri 'none'; object-src 'none'",
+  "htmlBytes": 1589
+}

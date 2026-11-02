@@ -1,0 +1,35 @@
+{
+  "command": "Sinh báo cáo từ bằng chứng đã ghi",
+  "at": "2026-11-02T02:40:16.059Z",
+  "code_revision": "eecf96adb098c0e463419182eaad4ff0204f7f04",
+  "node": "v24.14.0",
+  "os": "Windows_NT 10.0.26300 x64",
+  "bugsFound": 6,
+  "bugsFixed": 6,
+  "bugsUnfixed": 0,
+  "newEngineBugs": 0,
+  "nonStopped": {
+    "tp": 21,
+    "fn": 0,
+    "recall": 1
+  },
+  "confusionMatrix": {
+    "A": {
+      "A": 50,
+      "B": 0,
+      "C": 0
+    },
+    "B": {
+      "A": 0,
+      "B": 62,
+      "C": 0
+    },
+    "C": {
+      "A": 0,
+      "B": 0,
+      "C": 48
+    }
+  },
+  "browserAgreement": 1,
+  "readmeLines": 78
+}

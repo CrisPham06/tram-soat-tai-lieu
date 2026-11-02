@@ -1,0 +1,94 @@
+{
+  "command": "npm run verify:all",
+  "at": "2026-11-02T02:28:11.173Z",
+  "code_revision": "eecf96adb098c0e463419182eaad4ff0204f7f04",
+  "node": "v24.14.0",
+  "os": "Windows_NT 10.0.26300 x64",
+  "results": [
+    {
+      "name": "typecheck",
+      "status": "passed",
+      "durationMs": 2280.3784
+    },
+    {
+      "name": "lint",
+      "status": "passed",
+      "durationMs": 2344.9642
+    },
+    {
+      "name": "test",
+      "status": "passed",
+      "durationMs": 1016.6387000000004
+    },
+    {
+      "name": "audit-static",
+      "status": "passed",
+      "durationMs": 424.3595000000005
+    },
+    {
+      "name": "secret-scan",
+      "status": "passed",
+      "durationMs": 443.1405999999997
+    },
+    {
+      "name": "verify-schema-sync",
+      "status": "passed",
+      "durationMs": 408.1839999999993
+    },
+    {
+      "name": "build:web",
+      "status": "passed",
+      "durationMs": 2283.8523999999998
+    },
+    {
+      "name": "build:offline",
+      "status": "passed",
+      "durationMs": 1408.6059000000005
+    },
+    {
+      "name": "bundle-budget",
+      "status": "passed",
+      "durationMs": 489.23809999999867
+    },
+    {
+      "name": "e2e",
+      "status": "passed",
+      "durationMs": 4682.618
+    },
+    {
+      "name": "verify-offline",
+      "status": "passed",
+      "durationMs": 4658.589699999999
+    },
+    {
+      "name": "feedback-e2e",
+      "status": "passed",
+      "durationMs": 3038.106599999999
+    },
+    {
+      "name": "feedback-mock",
+      "status": "passed",
+      "durationMs": 3484.0213000000003
+    },
+    {
+      "name": "workflow-test",
+      "status": "passed",
+      "durationMs": 16372.387499999997
+    },
+    {
+      "name": "evaluate",
+      "status": "passed",
+      "durationMs": 1429.6617999999944
+    },
+    {
+      "name": "dataset-browser",
+      "status": "passed",
+      "durationMs": 88236.3633
+    },
+    {
+      "name": "eval-unchanged",
+      "status": "passed",
+      "durationMs": 417.80799999999
+    }
+  ]
+}

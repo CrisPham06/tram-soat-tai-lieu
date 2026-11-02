@@ -1,0 +1,91 @@
+{
+  "command": "Công cụ kiểm chứng nội bộ: security before",
+  "at": "2026-11-02T01:47:26.442Z",
+  "code_revision": "e399d3ba99b3c5bf116f57df209b7f799205d0b9",
+  "node": "v24.14.0",
+  "os": "Windows_NT 10.0.26300 x64",
+  "base": "https://tram-soat-tai-lieu.vercel.app",
+  "stage": "before",
+  "code_revision_scope": "Mã nguồn cục bộ của công cụ kiểm; host trước đẩy là bản công khai đang có, chưa gán tương đương mã mới.",
+  "pages": [
+    {
+      "path": "/",
+      "status": 200,
+      "headers": {
+        "content-security-policy": "default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data: blob:; font-src 'self'; connect-src 'none'; worker-src 'self' blob:; form-action 'none'; base-uri 'none'; object-src 'none'; frame-ancestors 'none'",
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "no-referrer",
+        "x-frame-options": "DENY",
+        "strict-transport-security": "max-age=63072000; includeSubDomains; preload"
+      },
+      "connect": "connect-src 'none'",
+      "expected": "connect-src 'none'",
+      "pass": true
+    },
+    {
+      "path": "/phan-hoi/",
+      "status": 200,
+      "headers": {
+        "content-security-policy": "default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data: blob:; font-src 'self'; connect-src https://bqlphxxmmrypheomtarb.supabase.co; worker-src 'self' blob:; form-action 'none'; base-uri 'none'; object-src 'none'; frame-ancestors 'none'",
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "no-referrer",
+        "x-frame-options": "DENY",
+        "strict-transport-security": "max-age=63072000; includeSubDomains; preload"
+      },
+      "connect": "connect-src https://bqlphxxmmrypheomtarb.supabase.co",
+      "expected": "connect-src https://bqlphxxmmrypheomtarb.supabase.co",
+      "pass": true
+    }
+  ],
+  "operations": [
+    {
+      "name": "insert",
+      "method": "POST",
+      "status": 201,
+      "errorCode": null,
+      "returnedRows": null,
+      "pass": true
+    },
+    {
+      "name": "select",
+      "method": "GET",
+      "status": 401,
+      "errorCode": "42501",
+      "returnedRows": null,
+      "pass": true
+    },
+    {
+      "name": "update",
+      "method": "PATCH",
+      "status": 401,
+      "errorCode": "42501",
+      "returnedRows": null,
+      "pass": true
+    },
+    {
+      "name": "delete",
+      "method": "DELETE",
+      "status": 401,
+      "errorCode": "42501",
+      "returnedRows": null,
+      "pass": true
+    },
+    {
+      "name": "too-long",
+      "method": "POST",
+      "status": 400,
+      "errorCode": "23514",
+      "returnedRows": null,
+      "pass": true
+    },
+    {
+      "name": "outside-check",
+      "method": "POST",
+      "status": 400,
+      "errorCode": "23514",
+      "returnedRows": null,
+      "pass": true
+    }
+  ],
+  "pass": true
+}

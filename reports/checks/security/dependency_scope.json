@@ -1,0 +1,94 @@
+{
+  "command": "Chuẩn hóa đường dẫn, ghi nguồn bằng chứng và kiểm gói bàn giao",
+  "at": "2026-11-02T02:32:44.574Z",
+  "code_revision": "eecf96adb098c0e463419182eaad4ff0204f7f04",
+  "node": "v24.14.0",
+  "os": "Windows_NT 10.0.26300 x64",
+  "packages": [
+    {
+      "name": "@eslint-community/eslint-utils",
+      "severity": "moderate",
+      "direct": false,
+      "development": true,
+      "fixAvailable": true
+    },
+    {
+      "name": "@eslint/config-array",
+      "severity": "moderate",
+      "direct": false,
+      "development": true,
+      "fixAvailable": true
+    },
+    {
+      "name": "@eslint/eslintrc",
+      "severity": "moderate",
+      "direct": false,
+      "development": true,
+      "fixAvailable": true
+    },
+    {
+      "name": "@typescript-eslint/eslint-plugin",
+      "severity": "moderate",
+      "direct": false,
+      "development": true,
+      "fixAvailable": true
+    },
+    {
+      "name": "@typescript-eslint/parser",
+      "severity": "moderate",
+      "direct": false,
+      "development": true,
+      "fixAvailable": true
+    },
+    {
+      "name": "@typescript-eslint/type-utils",
+      "severity": "moderate",
+      "direct": false,
+      "development": true,
+      "fixAvailable": true
+    },
+    {
+      "name": "@typescript-eslint/typescript-estree",
+      "severity": "moderate",
+      "direct": false,
+      "development": true,
+      "fixAvailable": true
+    },
+    {
+      "name": "@typescript-eslint/utils",
+      "severity": "moderate",
+      "direct": false,
+      "development": true,
+      "fixAvailable": true
+    },
+    {
+      "name": "eslint",
+      "severity": "moderate",
+      "direct": true,
+      "development": true,
+      "fixAvailable": true
+    },
+    {
+      "name": "eslint-plugin-jsx-a11y",
+      "severity": "moderate",
+      "direct": true,
+      "development": true,
+      "fixAvailable": true
+    },
+    {
+      "name": "minimatch",
+      "severity": "moderate",
+      "direct": false,
+      "development": true,
+      "fixAvailable": true
+    },
+    {
+      "name": "typescript-eslint",
+      "severity": "moderate",
+      "direct": true,
+      "development": true,
+      "fixAvailable": true
+    }
+  ],
+  "limitation": "Phân loại dev theo lockfile; đây là audit gói, không phải rà soát toàn bộ nguồn thư viện."
+}

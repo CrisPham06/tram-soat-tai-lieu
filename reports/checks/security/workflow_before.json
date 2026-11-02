@@ -1,0 +1,48 @@
+{
+  "command": "node tools/workflow-regressions.mjs",
+  "at": "2026-11-02T01:35:07.092Z",
+  "node": "v24.14.0",
+  "os": "Windows_NT 10.0.26300 x64",
+  "rows": [
+    {
+      "name": "reset-focus",
+      "pass": false,
+      "error": "expect(locator).toBeFocused() failed\n\nLocator:  locator('input[name=destination]').first()\nExpected: focused\nReceived: inactive\nTimeout:  5000ms\n\nCall log:\n  - Expect \"toBeFocused\" locator('input[name=destination]').first() with timeout 5000ms\n  - waiting for locator('input[name=destination]').first()\n    14 × locator resolved to <input type=\"radio\" value=\"internal\" name=\"destination\"/>\n       - unexpected value \"inactive\"\n"
+    },
+    {
+      "name": "paste-edit-focus",
+      "pass": false,
+      "error": "expect(locator).toBeFocused() failed\n\nLocator:  getByLabel('Văn bản cần soát')\nExpected: focused\nReceived: inactive\nTimeout:  5000ms\n\nCall log:\n  - Expect \"toBeFocused\" getByLabel('Văn bản cần soát') with timeout 5000ms\n  - waiting for getByLabel('Văn bản cần soát')\n    14 × locator resolved to <textarea rows=\"6\" id=\"paste-text\" placeholder=\"Dán văn bản giả lập tại đây…\"></textarea>\n       - unexpected value \"inactive\"\n"
+    },
+    {
+      "name": "finding-count",
+      "pass": false,
+      "error": "expect(locator).toHaveText(expected) failed\n\nLocator:  locator('.findings-title > span')\nExpected: \"2\"\nReceived: \"1\"\nTimeout:  5000ms\n\nCall log:\n  - Expect \"toHaveText\" locator('.findings-title > span') with timeout 5000ms\n  - waiting for locator('.findings-title > span')\n    14 × locator resolved to <span>1</span>\n       - unexpected value \"1\"\n"
+    },
+    {
+      "name": "numbered-redactions",
+      "pass": false,
+      "error": "expect(locator).toContainText(expected) failed\n\nLocator: getByLabel('Bản văn bản đã che', { exact: true })\nTimeout: 5000ms\n- Expected substring  - 1\n+ Received string     + 3\n\n- [ĐÃ CHE 1:\n+ TÀI LIỆU GIẢ LẬP PHỤC VỤ KIỂM THỬ, KHÔNG PHẢI TÀI LIỆU THẬT\n+ [ĐÃ CHE: Số điện thoại di động Việt Nam]\n+ [ĐÃ CHE: Số điện thoại di động Việt Nam]\n\nCall log:\n  - Expect \"toContainText\" getByLabel('Bản văn bản đã che', { exact: true }) with timeout 5000ms\n  - waiting for getByLabel('Bản văn bản đã che', { exact: true })\n    14 × locator resolved to <textarea rows=\"5\" readonly aria-label=\"Bản văn bản đã che\">TÀI LIỆU GIẢ LẬP PHỤC VỤ KIỂM THỬ, KHÔNG PHẢI TÀI…</textarea>\n       - unexpected value \"TÀI LIỆU GIẢ LẬP PHỤC VỤ KIỂM THỬ, KHÔNG PHẢI TÀI LIỆU THẬT\n[ĐÃ CHE: Số điện thoại di động Việt Nam]\n[ĐÃ CHE: Số điện thoại di động Việt Nam]\"\n"
+    },
+    {
+      "name": "feedback-sensitive-warning",
+      "pass": false,
+      "error": "expect(locator).toContainText(expected) failed\n\nLocator: locator('[role=alert]')\nExpected substring: \"Không gửi\"\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toContainText\" locator('[role=alert]') with timeout 5000ms\n  - waiting for locator('[role=alert]')\n"
+    },
+    {
+      "name": "axe-landmarks",
+      "pass": false,
+      "error": "expect(received).toEqual(expected) // deep equality\n\n- Expected  -  1\n+ Received  + 82\n\n- Array []\n+ Array [\n+   Object {\n+     \"description\": \"Ensure landmarks are unique\",\n+     \"help\": \"Landmarks should have a unique role or role/label/title (i.e. accessible name) combination\",\n+     \"helpUrl\": \"https://dequeuniversity.com/rules/axe/4.14/landmark-unique?application=playwright\",\n+     \"id\": \"landmark-unique\",\n+     \"impact\": \"moderate\",\n+     \"nodes\": Array [\n+       Object {\n+         \"all\": Array [],\n+         \"any\": Array [\n+           Object {\n+             \"data\": Object {\n+               \"accessibleText\": \"bản xem phiếu\",\n+               \"role\": \"region\",\n+             },\n+             \"id\": \"landmark-is-unique\",\n+             \"impact\": \"moderate\",\n+             \"message\": \"The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable\",\n+             \"relatedNodes\": Array [\n+               Object {\n+                 \"html\": \"<div class=\\\"paper-scroll\\\" tabindex=\\\"0\\\" role=\\\"region\\\" aria-label=\\\"Bản xem phiếu\\\">\",\n+                 \"target\": Array [\n+                   \".paper-scroll\",\n+                 ],\n+               },\n+             ],\n+           },\n+         ],\n+         \"failureSummary\": \"Fix any of the following:\n+   The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable\",\n+         \"html\": \"<section class=\\\"paper-dock\\\" aria-labelledby=\\\"preview-heading\\\">\",\n+         \"impact\": \"moderate\",\n+         \"none\": Array [],\n+         \"target\": Array [\n+           \".paper-dock\",\n+         ],\n+       },\n+     ],\n+     \"tags\": Array [\n+       \"cat.semantics\",\n+       \"best-practice\",\n+     ],\n+   },\n+   Object {\n+     \"description\": \"Ensure all page content is contained by landmarks\",\n+     \"help\": \"All page content should be contained by landmarks\",\n+     \"helpUrl\": \"https://dequeuniversity.com/rules/axe/4.14/region?application=playwright\",\n+     \"id\": \"region\",\n+     \"impact\": \"moderate\",\n+     \"nodes\": Array [\n+       Object {\n+         \"all\": Array [],\n+         \"any\": Array [\n+           Object {\n+             \"data\": Object {\n+               \"isIframe\": false,\n+             },\n+             \"id\": \"region\",\n+             \"impact\": \"moderate\",\n+             \"message\": \"Some page content is not contained by landmarks\",\n+             \"relatedNodes\": Array [],\n+           },\n+         ],\n+         \"failureSummary\": \"Fix any of the following:\n+   Some page content is not contained by landmarks\",\n+         \"html\": \"<div class=\\\"status-strip\\\">\",\n+         \"impact\": \"moderate\",\n+         \"none\": Array [],\n+         \"target\": Array [\n+           \".status-strip\",\n+         ],\n+       },\n+     ],\n+     \"tags\": Array [\n+       \"cat.keyboard\",\n+       \"best-practice\",\n+       \"RGAAv4\",\n+       \"RGAA-9.2.1\",\n+     ],\n+   },\n+ ]"
+    },
+    {
+      "name": "destination-clears-sheet-with-notice",
+      "pass": false,
+      "error": "expect(locator).toContainText(expected) failed\n\nLocator: locator('.notice')\nExpected substring: \"soát lại\"\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toContainText\" locator('.notice') with timeout 5000ms\n  - waiting for locator('.notice')\n"
+    },
+    {
+      "name": "session-cancels-late-read",
+      "pass": true
+    }
+  ],
+  "code_revision": "f3033c94ad6eb4deaf830812cdcadd3e91c8adc4"
+}

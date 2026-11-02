@@ -1,0 +1,806 @@
+[
+  {
+    "id": "N01",
+    "format": "txt",
+    "rules": "",
+    "category": "none",
+    "fileName": "N01_txt.txt",
+    "severity": "none",
+    "routes": {
+      "internal": "A",
+      "national": "A",
+      "ai": "A",
+      "outside": "A"
+    },
+    "sizeBytes": 147,
+    "sha256": "14752febdaeff1f30e57586468fd0895c1232ba8a84ca8ee09e8b6e644400f39"
+  },
+  {
+    "id": "N02",
+    "format": "docx",
+    "rules": "",
+    "category": "none",
+    "fileName": "N02_docx.docx",
+    "severity": "none",
+    "routes": {
+      "internal": "A",
+      "national": "A",
+      "ai": "A",
+      "outside": "A"
+    },
+    "sizeBytes": 1693,
+    "sha256": "7a3a8f1d220a4c4b5864accf63708938cba95dde2bc1f42404837a720694e091"
+  },
+  {
+    "id": "N03",
+    "format": "xlsx",
+    "rules": "",
+    "category": "none",
+    "fileName": "N03_xlsx.xlsx",
+    "severity": "none",
+    "routes": {
+      "internal": "A",
+      "national": "A",
+      "ai": "A",
+      "outside": "A"
+    },
+    "sizeBytes": 2050,
+    "sha256": "0a9740bba3f64fa83c2502331bb23fbd0ff16f322961bdab27f83444a0302368"
+  },
+  {
+    "id": "N04",
+    "format": "pptx",
+    "rules": "",
+    "slides": 3,
+    "category": "none",
+    "fileName": "N04_pptx.pptx",
+    "severity": "none",
+    "routes": {
+      "internal": "A",
+      "national": "A",
+      "ai": "A",
+      "outside": "A"
+    },
+    "sizeBytes": 3666,
+    "sha256": "f89e74cc403d36c44b96aeccc6c5ed19fcbfe31fd586868e135f3b4608be3484"
+  },
+  {
+    "id": "N05",
+    "format": "pdf",
+    "rules": "",
+    "category": "none",
+    "fileName": "N05_pdf.pdf",
+    "severity": "none",
+    "routes": {
+      "internal": "A",
+      "national": "A",
+      "ai": "A",
+      "outside": "A"
+    },
+    "sizeBytes": 8630,
+    "sha256": "bc23769eaf0ddde2b981d4df591a2b545e7774d464debf1ae9fc0b43e24af750"
+  },
+  {
+    "id": "N06",
+    "format": "docx",
+    "rules": "",
+    "category": "none",
+    "fileName": "N06_docx.docx",
+    "severity": "none",
+    "routes": {
+      "internal": "A",
+      "national": "A",
+      "ai": "A",
+      "outside": "A"
+    },
+    "sizeBytes": 1767,
+    "sha256": "865f201e27dd485ca6f6bcdfd76fbe0dc6494f3254703a35003096782307df11"
+  },
+  {
+    "id": "N07",
+    "format": "pdf",
+    "rules": "",
+    "pages": 2,
+    "category": "none",
+    "fileName": "N07_pdf.pdf",
+    "severity": "none",
+    "routes": {
+      "internal": "A",
+      "national": "A",
+      "ai": "A",
+      "outside": "A"
+    },
+    "sizeBytes": 9457,
+    "sha256": "d4028459157915d28ce6ecab2d925ba135d28cfe8ea5c0d4b4bf154b173e7e51"
+  },
+  {
+    "id": "N08",
+    "format": "xlsx",
+    "rules": "",
+    "sheets": 2,
+    "category": "none",
+    "fileName": "N08_xlsx.xlsx",
+    "severity": "none",
+    "routes": {
+      "internal": "A",
+      "national": "A",
+      "ai": "A",
+      "outside": "A"
+    },
+    "sizeBytes": 2530,
+    "sha256": "0873f56e7fa00189c75a18d7481605a410c6050d8bfeb63f457d8d50e4a5b955"
+  },
+  {
+    "id": "N09",
+    "format": "docx",
+    "rules": "",
+    "text": [
+      "AN TOÀN VÀ BẢO MẬT THÔNG TIN",
+      "Câu nhắc mật khẩu và bảo mật."
+    ],
+    "category": "none",
+    "fileName": "N09_docx.docx",
+    "severity": "none",
+    "routes": {
+      "internal": "A",
+      "national": "A",
+      "ai": "A",
+      "outside": "A"
+    },
+    "sizeBytes": 1752,
+    "sha256": "72e4ab4211dc47cad7b930548bbb49dd51982699e1cc83dcb37e79c92b5e0354"
+  },
+  {
+    "id": "N10",
+    "format": "txt",
+    "rules": "",
+    "text": [
+      "Số mười một chữ số: 12345678901.",
+      "Số thiếu chữ số: 091234567.",
+      "IP công cộng: 8.8.8.8.",
+      "ten.ho tại mail"
+    ],
+    "category": "none",
+    "fileName": "N10_txt.txt",
+    "severity": "none",
+    "routes": {
+      "internal": "A",
+      "national": "A",
+      "ai": "A",
+      "outside": "A"
+    },
+    "sizeBytes": 281,
+    "sha256": "835d314bf127da7fcc45a24a78e23e6d277f9e52fbe800ce8b4faf3e8e8f78ce"
+  },
+  {
+    "id": "N11",
+    "format": "pptx",
+    "rules": "",
+    "text": [
+      "tối mật và tuyệt mật viết thường",
+      "ĐỘ MẬT:"
+    ],
+    "category": "none",
+    "fileName": "N11_pptx.pptx",
+    "severity": "none",
+    "routes": {
+      "internal": "A",
+      "national": "A",
+      "ai": "A",
+      "outside": "A"
+    },
+    "sizeBytes": 2355,
+    "sha256": "b3a3f3ae290dad23b4b6041586ea436d95f5c41508c76bd8b86483f717f88547"
+  },
+  {
+    "id": "N12",
+    "format": "xlsx",
+    "rules": "",
+    "text": [
+      "9999123456789",
+      "portal.example.com",
+      "D:\\Data"
+    ],
+    "category": "none",
+    "fileName": "N12_xlsx.xlsx",
+    "severity": "none",
+    "routes": {
+      "internal": "A",
+      "national": "A",
+      "ai": "A",
+      "outside": "A"
+    },
+    "sizeBytes": 2110,
+    "sha256": "ee2efe933451978b55e895cacd60040c74c45928ded8e0c972b58710279fdd1a"
+  },
+  {
+    "id": "M01",
+    "format": "txt",
+    "rules": "MARK-01:1",
+    "text": [
+      "TỐI MẬT"
+    ],
+    "category": "mark",
+    "fileName": "M01_txt.txt",
+    "severity": "S3",
+    "routes": {
+      "internal": "C",
+      "national": "C",
+      "ai": "C",
+      "outside": "C"
+    },
+    "sizeBytes": 169,
+    "sha256": "9e1d89b11f212232e5696cdcd0cc89997b01f53063d652de390f0badd2596762"
+  },
+  {
+    "id": "M02",
+    "format": "docx",
+    "rules": "MARK-01:1",
+    "header": "ĐỘ MẬT: TUYỆT MẬT",
+    "category": "mark",
+    "fileName": "M02_docx.docx",
+    "severity": "S3",
+    "routes": {
+      "internal": "C",
+      "national": "C",
+      "ai": "C",
+      "outside": "C"
+    },
+    "sizeBytes": 2091,
+    "sha256": "1f85af60af16f441f5af51b3cbab4d0ec5e1046a29b18bd71cd9427084c4978c"
+  },
+  {
+    "id": "M03",
+    "format": "pdf",
+    "rules": "MARK-01:1",
+    "text": [
+      "MẬT"
+    ],
+    "category": "mark",
+    "fileName": "M03_pdf.pdf",
+    "severity": "S3",
+    "routes": {
+      "internal": "C",
+      "national": "C",
+      "ai": "C",
+      "outside": "C"
+    },
+    "sizeBytes": 8613,
+    "sha256": "26f2d01f1b68818d3967b6ce0861e8008698f805203d5a86403623c4b2d9002e"
+  },
+  {
+    "id": "M04",
+    "format": "pptx",
+    "rules": "MARK-03:1",
+    "notes": "TÀI LIỆU MẬT",
+    "category": "mark",
+    "fileName": "M04_pptx.pptx",
+    "severity": "S3",
+    "routes": {
+      "internal": "C",
+      "national": "C",
+      "ai": "C",
+      "outside": "C"
+    },
+    "sizeBytes": 3169,
+    "sha256": "50dcc61fd6e2cf8a01c6221f2d66a13c1cd3f23786b6beb6dc4ccef59e39e8b6"
+  },
+  {
+    "id": "M05",
+    "format": "xlsx",
+    "rules": "MARK-01:1",
+    "text": [
+      "TỐI MẬT"
+    ],
+    "category": "mark",
+    "fileName": "M05_xlsx.xlsx",
+    "severity": "S3",
+    "routes": {
+      "internal": "C",
+      "national": "C",
+      "ai": "C",
+      "outside": "C"
+    },
+    "sizeBytes": 2064,
+    "sha256": "a8f3679b2d234956a4001d10ace4761ec53a2526a40c89a4eef8966aca6ced19"
+  },
+  {
+    "id": "M06",
+    "format": "docx",
+    "rules": "MARK-03:1",
+    "footer": "VĂN BẢN MẬT",
+    "category": "mark",
+    "fileName": "M06_docx.docx",
+    "severity": "S3",
+    "routes": {
+      "internal": "C",
+      "national": "C",
+      "ai": "C",
+      "outside": "C"
+    },
+    "sizeBytes": 2079,
+    "sha256": "8e35c7970a75f1ed629ea8998159623772f30f7588665b3037b7e631456fd13f"
+  },
+  {
+    "id": "K01",
+    "format": "txt",
+    "rules": "KEYW-01:1",
+    "text": [
+      "Mẫu tên KẾ HOẠCH TRĂNG XANH dùng để thử."
+    ],
+    "category": "keyword",
+    "fileName": "K01_txt.txt",
+    "severity": "S3",
+    "routes": {
+      "internal": "C",
+      "national": "C",
+      "ai": "C",
+      "outside": "C"
+    },
+    "sizeBytes": 212,
+    "sha256": "ce600210144e61bfde5d3c4cbd6ef6147aeccb6670e5a1be4bf8c3017bfb79bf"
+  },
+  {
+    "id": "K02",
+    "format": "docx",
+    "rules": "KEYW-01:1",
+    "text": [
+      "ke hoach trang xanh"
+    ],
+    "category": "keyword",
+    "fileName": "K02_docx.docx",
+    "severity": "S3",
+    "routes": {
+      "internal": "C",
+      "national": "C",
+      "ai": "C",
+      "outside": "C"
+    },
+    "sizeBytes": 1707,
+    "sha256": "4e97c5439373243ad458cee686dfd7fc58a0eea953583aafce99967a55a001df"
+  },
+  {
+    "id": "K03",
+    "format": "pdf",
+    "rules": "KEYW-01:1",
+    "text": [
+      "ĐỀ ÁN SAO BĂNG"
+    ],
+    "category": "keyword",
+    "fileName": "K03_pdf.pdf",
+    "severity": "S3",
+    "routes": {
+      "internal": "C",
+      "national": "C",
+      "ai": "C",
+      "outside": "C"
+    },
+    "sizeBytes": 9113,
+    "sha256": "733e5b8272ef393650d3bb01ec3885c431eb36250c660fe9dec93b5f835b4194"
+  },
+  {
+    "id": "K04",
+    "format": "xlsx",
+    "rules": "KEYW-01:1",
+    "text": [
+      "DANH SÁCH NGUỒN MẪU"
+    ],
+    "category": "keyword",
+    "fileName": "K04_xlsx.xlsx",
+    "severity": "S3",
+    "routes": {
+      "internal": "C",
+      "national": "C",
+      "ai": "C",
+      "outside": "C"
+    },
+    "sizeBytes": 2078,
+    "sha256": "7d533549958de452730b634227c27ed8b636d0b1b038dff20bba106da09c44fb"
+  },
+  {
+    "id": "P01",
+    "format": "txt",
+    "rules": "PII-01:2",
+    "text": [
+      "0912 345 678 và 0912.345.679"
+    ],
+    "category": "personal",
+    "fileName": "P01_txt.txt",
+    "severity": "S2",
+    "routes": {
+      "internal": "B",
+      "national": "B",
+      "ai": "B",
+      "outside": "B"
+    },
+    "sizeBytes": 187,
+    "sha256": "63db1a36f14211442c86f05fff194917e8ee40559fcc6b5e07b4f14049baef2e"
+  },
+  {
+    "id": "P02",
+    "format": "docx",
+    "rules": "PII-02:1",
+    "text": [
+      "ten.ho@mail.example.vn"
+    ],
+    "category": "personal",
+    "fileName": "P02_docx.docx",
+    "severity": "S2",
+    "routes": {
+      "internal": "B",
+      "national": "B",
+      "ai": "B",
+      "outside": "B"
+    },
+    "sizeBytes": 1720,
+    "sha256": "e38b61273470060ec58a389434e484c4d38111d5395a0eb33637ef238bbff334"
+  },
+  {
+    "id": "P03",
+    "format": "pdf",
+    "rules": "PII-03:1",
+    "text": [
+      "999912345678"
+    ],
+    "category": "personal",
+    "fileName": "P03_pdf.pdf",
+    "severity": "S2",
+    "routes": {
+      "internal": "B",
+      "national": "B",
+      "ai": "B",
+      "outside": "B"
+    },
+    "sizeBytes": 9667,
+    "sha256": "657f5efbd27d5025bcdfa9a392db1e01da6baf35710f26b352b0cf7a0005182d"
+  },
+  {
+    "id": "P04",
+    "format": "xlsx",
+    "rules": "PII-01:1;PII-02:1",
+    "text": [
+      "0912345678",
+      "ten.ho@mail.example.vn"
+    ],
+    "category": "personal",
+    "fileName": "P04_xlsx.xlsx",
+    "severity": "S2",
+    "routes": {
+      "internal": "B",
+      "national": "B",
+      "ai": "B",
+      "outside": "B"
+    },
+    "sizeBytes": 2095,
+    "sha256": "c70c19ee4720310eb5453936da2a9efcaec13d3f03ecdd9fca08f9e40ee6d4c1"
+  },
+  {
+    "id": "P05",
+    "format": "pptx",
+    "rules": "PII-01:1",
+    "notes": "0912345678",
+    "category": "personal",
+    "fileName": "P05_pptx.pptx",
+    "severity": "S2",
+    "routes": {
+      "internal": "B",
+      "national": "B",
+      "ai": "B",
+      "outside": "B"
+    },
+    "sizeBytes": 3155,
+    "sha256": "684efa8b962e435fa62c5841cda7f9e9063d7008d19688da18907519dd68e615"
+  },
+  {
+    "id": "P06",
+    "format": "docx",
+    "rules": "PII-01:1;PII-02:1;PII-03:1",
+    "text": [
+      "0912345678",
+      "ten.ho@mail.example.vn",
+      "999912345678"
+    ],
+    "category": "personal",
+    "fileName": "P06_docx.docx",
+    "severity": "S2",
+    "routes": {
+      "internal": "B",
+      "national": "B",
+      "ai": "B",
+      "outside": "B"
+    },
+    "sizeBytes": 1737,
+    "sha256": "b56ebeb670791b3285f6baa1ad7e87c13f8850b35305c6b422a87928b72cdb88"
+  },
+  {
+    "id": "W01",
+    "format": "txt",
+    "rules": "NET-01:2",
+    "text": [
+      "192.168.1.20 và 10.0.0.5"
+    ],
+    "category": "network",
+    "fileName": "W01_txt.txt",
+    "severity": "S2",
+    "routes": {
+      "internal": "B",
+      "national": "B",
+      "ai": "B",
+      "outside": "B"
+    },
+    "sizeBytes": 173,
+    "sha256": "d21dbbc29d56e47e0b3ba8e868246524162452c4f64df13edfcba9d81cced363"
+  },
+  {
+    "id": "W02",
+    "format": "docx",
+    "rules": "NET-02:1",
+    "text": [
+      "may-hoc-01.noibo.local"
+    ],
+    "category": "network",
+    "fileName": "W02_docx.docx",
+    "severity": "S2",
+    "routes": {
+      "internal": "B",
+      "national": "B",
+      "ai": "B",
+      "outside": "B"
+    },
+    "sizeBytes": 1717,
+    "sha256": "53a29ff7e8b8fff4abab3b6bc3951ca585bde07293c86f8ae4e10f7ebbf006b2"
+  },
+  {
+    "id": "W03",
+    "format": "xlsx",
+    "rules": "NET-03:1",
+    "text": [
+      "\\\\maychu-gia\\tai-lieu\\ke-hoach.docx"
+    ],
+    "category": "network",
+    "fileName": "W03_xlsx.xlsx",
+    "severity": "S2",
+    "routes": {
+      "internal": "B",
+      "national": "B",
+      "ai": "B",
+      "outside": "B"
+    },
+    "sizeBytes": 2092,
+    "sha256": "eaa40024df85bbfd922ba485b5f6410e8e889a6961d15056becb2b42710ce7c4"
+  },
+  {
+    "id": "W04",
+    "format": "pptx",
+    "rules": "NET-01:1",
+    "text": [
+      "172.20.5.9"
+    ],
+    "category": "network",
+    "fileName": "W04_pptx.pptx",
+    "severity": "S2",
+    "routes": {
+      "internal": "B",
+      "national": "B",
+      "ai": "B",
+      "outside": "B"
+    },
+    "sizeBytes": 2317,
+    "sha256": "cb0e766099f2849223ced1a5d253e56c68e3686a452478cbc77d8a1a3024f558"
+  },
+  {
+    "id": "E01",
+    "format": "docx",
+    "rules": "META-01:1;META-03:1",
+    "author": true,
+    "link": true,
+    "category": "metadata",
+    "fileName": "E01_docx.docx",
+    "severity": "S1",
+    "routes": {
+      "internal": "A",
+      "national": "B",
+      "ai": "B",
+      "outside": "B"
+    },
+    "sizeBytes": 2096,
+    "sha256": "640871a17216c12c457f3c49178dcca5ea07aab65666f3e6a27c6797e57ef3ef"
+  },
+  {
+    "id": "E02",
+    "format": "docx",
+    "rules": "META-04:1",
+    "comments": true,
+    "category": "metadata",
+    "fileName": "E02_docx.docx",
+    "severity": "S2",
+    "routes": {
+      "internal": "B",
+      "national": "B",
+      "ai": "B",
+      "outside": "B"
+    },
+    "sizeBytes": 2203,
+    "sha256": "311c2f92a6bdad41b17d06f197e33899f7dc3705de94c3f086e376151d387e08"
+  },
+  {
+    "id": "E03",
+    "format": "docx",
+    "rules": "META-05:1",
+    "tracked": true,
+    "category": "metadata",
+    "fileName": "E03_docx.docx",
+    "severity": "S2",
+    "routes": {
+      "internal": "B",
+      "national": "B",
+      "ai": "B",
+      "outside": "B"
+    },
+    "sizeBytes": 1779,
+    "sha256": "d6c3f5b9beb6e8d2d60b6aecb4684e5a3c99051b97d0e2fb1c266ae91dba31e9"
+  },
+  {
+    "id": "E04",
+    "format": "pptx",
+    "rules": "META-06:1",
+    "hidden": true,
+    "category": "metadata",
+    "fileName": "E04_pptx.pptx",
+    "severity": "S2",
+    "routes": {
+      "internal": "B",
+      "national": "B",
+      "ai": "B",
+      "outside": "B"
+    },
+    "sizeBytes": 2309,
+    "sha256": "9b9621c50560d4a479e5d576c2b3fd1df96bca204db6e7133059a7066df94904"
+  },
+  {
+    "id": "E05",
+    "format": "xlsx",
+    "rules": "META-06:1",
+    "hidden": true,
+    "category": "metadata",
+    "fileName": "E05_xlsx.xlsx",
+    "severity": "S2",
+    "routes": {
+      "internal": "B",
+      "national": "B",
+      "ai": "B",
+      "outside": "B"
+    },
+    "sizeBytes": 2534,
+    "sha256": "b28937e025f45ad4648aa694a1aef12a21b967987b325e023b6fce8246cfa196"
+  },
+  {
+    "id": "E06",
+    "format": "pdf",
+    "rules": "META-01:1;META-02:1",
+    "author": true,
+    "path": true,
+    "category": "metadata",
+    "fileName": "E06_pdf.pdf",
+    "severity": "S1",
+    "routes": {
+      "internal": "A",
+      "national": "B",
+      "ai": "B",
+      "outside": "B"
+    },
+    "sizeBytes": 9160,
+    "sha256": "4e587e96b24278fa2c1885f17606f440476846e1ee8966fd5ab2ed7f1eda5381"
+  },
+  {
+    "id": "U01",
+    "format": "docx",
+    "rules": "MARK-01:1;PII-01:1;META-01:1",
+    "text": [
+      "TỐI MẬT",
+      "0912345678"
+    ],
+    "author": true,
+    "category": "combined",
+    "fileName": "U01_docx.docx",
+    "severity": "S3",
+    "routes": {
+      "internal": "C",
+      "national": "C",
+      "ai": "C",
+      "outside": "C"
+    },
+    "sizeBytes": 1999,
+    "sha256": "a2edc72a6e68c28a61c28f6c8f44c19dd1d95a3a7efd958cde3354393b1b4ffa"
+  },
+  {
+    "id": "U02",
+    "format": "xlsx",
+    "rules": "KEYW-01:1;NET-01:1;META-06:1;META-07:1",
+    "text": [
+      "ĐỀ ÁN SAO BĂNG",
+      "192.168.2.10"
+    ],
+    "hidden": true,
+    "external": true,
+    "category": "combined",
+    "fileName": "U02_xlsx.xlsx",
+    "severity": "S3",
+    "routes": {
+      "internal": "C",
+      "national": "C",
+      "ai": "C",
+      "outside": "C"
+    },
+    "sizeBytes": 3258,
+    "sha256": "771f84bed27e2941c26d17df0b5f3d8730574c98c3de1e7c331f8551fedec00e"
+  },
+  {
+    "id": "X01",
+    "format": "docx",
+    "rules": "",
+    "reject": "zip-broken",
+    "category": "error",
+    "fileName": "X01_docx.docx",
+    "severity": "none",
+    "routes": {
+      "internal": "REJECT",
+      "national": "REJECT",
+      "ai": "REJECT",
+      "outside": "REJECT"
+    },
+    "sizeBytes": 846,
+    "sha256": "aaf29f6bd649ddb062f6f4ada64f2187142bd5911fb844a2307ce4e01700ee5c"
+  },
+  {
+    "id": "X02",
+    "format": "pdf",
+    "rules": "",
+    "reject": "encrypted",
+    "category": "error",
+    "fileName": "X02_pdf.pdf",
+    "severity": "none",
+    "routes": {
+      "internal": "REJECT",
+      "national": "REJECT",
+      "ai": "REJECT",
+      "outside": "REJECT"
+    },
+    "sizeBytes": 9453,
+    "sha256": "ff629d391ea5bc2b8010075e98f803d6c82d6065fba589896a3c6aae25033637"
+  },
+  {
+    "id": "X03",
+    "format": "pdf",
+    "rules": "",
+    "reject": "pdf-no-text",
+    "category": "error",
+    "fileName": "X03_pdf.pdf",
+    "severity": "none",
+    "routes": {
+      "internal": "REJECT",
+      "national": "REJECT",
+      "ai": "REJECT",
+      "outside": "REJECT"
+    },
+    "sizeBytes": 15707,
+    "sha256": "4b886493f85f8bb6d5ac66a6de0e8cf6b1421ec7230a396ffd3969334405e721"
+  },
+  {
+    "id": "X04",
+    "format": "docx",
+    "rules": "",
+    "reject": "format-mismatch",
+    "category": "error",
+    "fileName": "X04_docx.docx",
+    "severity": "none",
+    "routes": {
+      "internal": "REJECT",
+      "national": "REJECT",
+      "ai": "REJECT",
+      "outside": "REJECT"
+    },
+    "sizeBytes": 157,
+    "sha256": "23ef97e137d4c81ba504c2af2815a2c7f82b3699b5c0a1977d804e6e4acc785c"
+  }
+]

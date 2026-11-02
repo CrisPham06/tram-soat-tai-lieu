@@ -1,0 +1,120 @@
+{
+  "command": "npm run verify-offline",
+  "at": "2026-11-02T02:26:17.878Z",
+  "code_revision": "eecf96adb098c0e463419182eaad4ff0204f7f04",
+  "node": "v24.14.0",
+  "os": "Windows_NT 10.0.26300 x64",
+  "cases": [
+    {
+      "name": "unselected input is disabled",
+      "status": "passed",
+      "durationMs": 4.253600000000006
+    },
+    {
+      "name": "text A",
+      "status": "passed",
+      "durationMs": 236.21360000000004
+    },
+    {
+      "name": "text B and masked excerpts",
+      "status": "passed",
+      "durationMs": 217.31409999999983
+    },
+    {
+      "name": "docx header C and no excerpt",
+      "status": "passed",
+      "durationMs": 223.53750000000014
+    },
+    {
+      "name": "PDF text",
+      "status": "passed",
+      "durationMs": 271.7379000000001
+    },
+    {
+      "name": "reject wrong extension",
+      "status": "passed",
+      "durationMs": 229.05359999999973
+    },
+    {
+      "name": "paste mask and S3 lock",
+      "status": "passed",
+      "durationMs": 565.0396999999998
+    },
+    {
+      "name": "print one page",
+      "status": "passed",
+      "durationMs": 60.85159999999996
+    },
+    {
+      "name": "rulepack import and search",
+      "status": "passed",
+      "durationMs": 239.59619999999995
+    },
+    {
+      "name": "reset",
+      "status": "passed",
+      "durationMs": 48.73899999999958
+    },
+    {
+      "name": "responsive dark and keyboard",
+      "status": "passed",
+      "durationMs": 463.38899999999967
+    },
+    {
+      "name": "no retained browser storage",
+      "status": "passed",
+      "durationMs": 0.6493000000000393
+    },
+    {
+      "name": "no network after load",
+      "status": "passed",
+      "durationMs": 0.2800000000002001
+    },
+    {
+      "name": "no CSP or console errors",
+      "status": "passed",
+      "durationMs": 0.1190999999998894
+    },
+    {
+      "name": "accessibility serious and critical",
+      "status": "passed",
+      "durationMs": 0.06390000000010332
+    }
+  ],
+  "requests": [
+    {
+      "url": "blob:null/27d9c07d-9dad-410c-907c-42ea28b8fe13",
+      "method": "GET"
+    },
+    {
+      "url": "blob:null/87d6ac72-b1c1-4e1b-90e5-9fe22ccd6ba8",
+      "method": "GET"
+    },
+    {
+      "url": "blob:null/0234c0d2-50cf-4ee1-8842-390b653167c9",
+      "method": "GET"
+    },
+    {
+      "url": "blob:null/027ef2af-6c11-4f46-953d-d627de48a39c",
+      "method": "GET"
+    },
+    {
+      "url": "blob:null/8f5ee486-94a1-4c21-8700-6a98eb7abaf1",
+      "method": "GET"
+    },
+    {
+      "url": "blob:null/0209d64b-e57d-40d0-b59f-2985b4a0e45b",
+      "method": "GET"
+    },
+    {
+      "url": "blob:null/eb6322a3-f378-4bce-ab78-424d4e80928d",
+      "method": "GET"
+    },
+    {
+      "url": "blob:null/652db072-2a0a-4c36-8d2e-70d56d8fa05a",
+      "method": "GET"
+    }
+  ],
+  "errors": [],
+  "violations": []
+}

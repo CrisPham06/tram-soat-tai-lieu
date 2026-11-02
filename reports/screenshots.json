@@ -1,0 +1,73 @@
+{
+  "command": "Chuẩn hóa đường dẫn, ghi nguồn bằng chứng và kiểm gói bàn giao",
+  "at": "2026-11-02T02:32:44.574Z",
+  "code_revision": "eecf96adb098c0e463419182eaad4ff0204f7f04",
+  "node": "v24.14.0",
+  "os": "Windows_NT 10.0.26300 x64",
+  "files": [
+    {
+      "file": "docs/screens/01_trong.png",
+      "beforeBytes": 287768,
+      "afterBytes": 287768,
+      "width": 1440,
+      "height": 2111,
+      "lossless": true
+    },
+    {
+      "file": "docs/screens/02_phieu_A.png",
+      "beforeBytes": 302855,
+      "afterBytes": 302855,
+      "width": 1440,
+      "height": 2292,
+      "lossless": true
+    },
+    {
+      "file": "docs/screens/03_phieu_B.png",
+      "beforeBytes": 317978,
+      "afterBytes": 317978,
+      "width": 1440,
+      "height": 2675,
+      "lossless": true
+    },
+    {
+      "file": "docs/screens/04_phieu_C.png",
+      "beforeBytes": 309052,
+      "afterBytes": 309052,
+      "width": 1440,
+      "height": 2434,
+      "lossless": true
+    },
+    {
+      "file": "docs/screens/05_E01_noi_bo.png",
+      "beforeBytes": 318226,
+      "afterBytes": 318226,
+      "width": 1440,
+      "height": 2521,
+      "lossless": true
+    },
+    {
+      "file": "docs/screens/06_E01_quoc_gia.png",
+      "beforeBytes": 312960,
+      "afterBytes": 312960,
+      "width": 1440,
+      "height": 2521,
+      "lossless": true
+    },
+    {
+      "file": "docs/screens/07_dan.png",
+      "beforeBytes": 335277,
+      "afterBytes": 335277,
+      "width": 1440,
+      "height": 2456,
+      "lossless": true
+    },
+    {
+      "file": "docs/screens/08_phan_hoi.png",
+      "beforeBytes": 104330,
+      "afterBytes": 104330,
+      "width": 1440,
+      "height": 1461,
+      "lossless": true
+    }
+  ]
+}

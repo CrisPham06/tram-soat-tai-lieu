@@ -1,0 +1,26 @@
+{
+  "command": "node tools/maintainers/quality.mjs",
+  "at": "2026-11-02T02:28:17.005Z",
+  "code_revision": "eecf96adb098c0e463419182eaad4ff0204f7f04",
+  "node": "v24.14.0",
+  "os": "Windows_NT 10.0.26300 x64",
+  "interactionReadyMs": 120.97340000000008,
+  "fileBytes": 13450805,
+  "screeningDurationMs": 1768.2623,
+  "longTasks": [
+    {
+      "start": 759.7999999998137,
+      "duration": 749
+    }
+  ],
+  "processingWindow": {
+    "started": 1521.8999999994412,
+    "ended": 2106.5999999996275,
+    "longTasks": []
+  },
+  "CLS": 0.13203779013951616,
+  "memory": {
+    "usedJSHeapSize": 228328908,
+    "totalJSHeapSize": 285422868
+  }
+}

@@ -1,0 +1,5 @@
+import { readFileSync, writeFileSync } from 'node:fs';
+import { metadata } from './maintainers/meta.mjs';
+const sql=readFileSync('supabase/migrations/0001_feedback.sql','utf8'),ts=readFileSync('src/shared/feedback-schema.ts','utf8');
+const checks={ tester:sql.includes('^T[0-9]{2}$')&&ts.includes('^T[0-9]{2}$'),answer:sql.includes("'co', 'mot_phan', 'khong'")&&ts.includes("['co', 'mot_phan', 'khong']"),clarity:/q2_clarity between 1 and 5/.test(sql)&&/clarityMin: 1, clarityMax: 5/.test(ts),texts:(sql.match(/between 1 and 500/g)||[]).length===3&&/textMin: 1, textMax: 500/.test(ts),versions:(sql.match(/between 1 and 40/g)||[]).length===2&&/versionMin: 1, versionMax: 40/.test(ts),rls:/force row level security/.test(sql),writeOnly:!/^create policy.*select/im.test(sql)&&/grant insert/.test(sql)};
+writeFileSync('reports/checks/security/schema_sync.json',JSON.stringify({...metadata('npm run verify-schema-sync'),checks},null,2));console.info(JSON.stringify(checks));process.exitCode=Object.values(checks).every(Boolean)?0:1;

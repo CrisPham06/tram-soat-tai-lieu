@@ -1,0 +1,18 @@
+import { expect, test } from 'vitest';
+import { zipSync, strToU8 } from 'fflate';
+import { readZip } from '../src/core/readers/zip-guard';
+import { parseXml } from '../src/core/readers/xml';
+import { readDocx } from '../src/core/readers/docx';
+import { screen } from '../src/core/engine';
+import { DEFAULT_RULEPACK } from '../src/core/rulepack';
+import { readXlsx } from '../src/core/readers/xlsx';
+import { readPptx } from '../src/core/readers/pptx';
+const xml = '<w:document xmlns:w="urn:word"><w:body><w:p><w:r><w:t>Buổi sinh hoạt câu lạc bộ.</w:t></w:r></w:p></w:body></w:document>';
+test('đọc docx từ XML', () => expect(readDocx(readZip(zipSync({ 'word/document.xml': strToU8(xml) }))).units[0].text).toContain('sinh hoạt'));
+test('quét cả đầu trang', () => { const d = readDocx({ 'word/document.xml': strToU8(xml), 'word/header1.xml': strToU8('<w:hdr xmlns:w="urn:word"><w:p><w:r><w:t>ĐỘ MẬT: TUYỆT MẬT</w:t></w:r></w:p></w:hdr>') }); const result = screen({ ...d, format: 'docx', fileName: 'gia.docx', sizeBytes: 0, sha256: '' }, DEFAULT_RULEPACK, 'ai'); expect(result.outcome).toBe('C'); expect(result.findings[0].unitKind).toBe('header'); });
+test('từ chối DTD và XML hỏng', () => { expect(() => parseXml(strToU8('<!DOCTYPE x><x/>'))).toThrow('xml-doctype'); expect(() => parseXml(strToU8('<x>'))).toThrow('xml-broken'); });
+test('từ chối XML quá sâu', () => expect(() => parseXml(strToU8('<x>'.repeat(200) + '</x>'.repeat(200)))).toThrow('xml-depth'));
+test('từ chối zip cắt cụt và đường dẫn', () => { const zip = zipSync({ 'word/document.xml': strToU8(xml) }); expect(() => readZip(zip.subarray(0, zip.length - 10))).toThrow('zip-broken'); expect(() => readZip(zipSync({ '../x': strToU8('gia') }))).toThrow('zip-path'); });
+test('từ chối zip khai báo phình trước giải nén', () => { const zip = zipSync({ 'x.xml': strToU8('gia') }); const v = new DataView(zip.buffer); for (let i = 0; i < zip.length - 46; i++) if (v.getUint32(i, true) === 0x02014b50) { v.setUint32(i + 24, 300 * 1024 * 1024, true); break; } expect(() => readZip(zip)).toThrow('zip-limit'); });
+test('trang tính và hàng cột ẩn được quét', () => { const data = readXlsx({ 'xl/workbook.xml': strToU8('<workbook><sheets><sheet name="Bảng giả" state="hidden"/></sheets></workbook>'), 'xl/worksheets/sheet1.xml': strToU8('<worksheet><sheetData><row r="1" hidden="1"><c r="A1" t="inlineStr"><is><t>0912345678</t></is></c></row></sheetData></worksheet>') }); expect(data.meta.hiddenItems).toBe(2); expect(data.units.find(u => u.label === 'Bảng giả!A1')?.hidden).toBe(true); });
+test('trang chiếu ẩn và ghi chú được đọc', () => { const data = readPptx({ 'ppt/presentation.xml': strToU8('<presentation/>'), 'ppt/slides/slide1.xml': strToU8('<sld show="0"><p><t>Sinh hoạt</t></p></sld>'), 'ppt/notesSlides/notesSlide1.xml': strToU8('<notes><p><t>0912345678</t></p></notes>') }); expect(data.meta.hiddenItems).toBe(1); expect(data.units.some(u => u.kind === 'notes' && u.text.includes('0912345678'))).toBe(true); });

@@ -1,0 +1,93 @@
+{
+  "schema": "tram-soat-rulepack/1",
+  "id": "demo-1.0.0",
+  "name": "Bộ quy tắc minh họa của nhóm ANMBEENINE",
+  "note": "Mọi từ khóa trong tệp này là từ giả do nhóm soạn để minh họa. Đơn vị dùng thật phải tự nạp bộ quy tắc của mình.",
+  "severities": {
+    "S3": "Dừng: chuyển người có thẩm quyền xem xét",
+    "S2": "Giữ nội bộ: cần xử lý trước khi chia sẻ",
+    "S1": "Lưu ý: dữ liệu ẩn hoặc dấu vết cá nhân"
+  },
+  "routing": {
+    "outcomes": {
+      "A": "Được xem xét công khai",
+      "B": "Giữ nội bộ",
+      "C": "Chuyển người có thẩm quyền xem xét"
+    },
+    "destinations": {
+      "internal": { "label": "Hệ thống nội bộ", "S3": "C", "S2": "B", "S1": "A", "none": "A" },
+      "national": { "label": "Nền tảng quốc gia", "S3": "C", "S2": "B", "S1": "B", "none": "A" },
+      "ai": { "label": "Công cụ trí tuệ nhân tạo bên ngoài", "S3": "C", "S2": "B", "S1": "B", "none": "A" },
+      "outside": { "label": "Gửi ra ngoài", "S3": "C", "S2": "B", "S1": "B", "none": "A" }
+    }
+  },
+  "rules": [
+    {
+      "id": "MARK-01", "group": "mark", "title": "Dấu chỉ độ mật đứng riêng một dòng", "severity": "S3",
+      "type": "regex", "unit": "paragraph", "flags": "u",
+      "pattern": "^\\s*(?:ĐỘ\\s+MẬT\\s*[:\\-]\\s*)?(?:TUYỆT\\s+MẬT|TỐI\\s+MẬT|MẬT)\\s*[.]?\\s*$",
+      "caseSensitive": true, "mask": "full"
+    },
+    {
+      "id": "MARK-02", "group": "mark", "title": "Cụm TUYỆT MẬT hoặc TỐI MẬT viết hoa", "severity": "S3",
+      "type": "regex", "unit": "text", "flags": "u",
+      "pattern": "(?<![\\p{L}])(?:TUYỆT\\s+MẬT|TỐI\\s+MẬT)(?![\\p{L}])",
+      "caseSensitive": true, "mask": "full"
+    },
+    {
+      "id": "MARK-03", "group": "mark", "title": "Cụm độ mật đi kèm từ chỉ loại tài liệu", "severity": "S3",
+      "type": "regex", "unit": "text", "flags": "u",
+      "pattern": "(?:TÀI\\s+LIỆU|VĂN\\s+BẢN|CÔNG\\s+VĂN)\\s+(?:TUYỆT\\s+MẬT|TỐI\\s+MẬT|MẬT)(?![\\p{L}])",
+      "caseSensitive": true, "mask": "full"
+    },
+    {
+      "id": "KEYW-01", "group": "keyword", "title": "Từ khóa do đơn vị cung cấp", "severity": "S3",
+      "type": "wordlist", "ignoreCase": true, "ignoreDiacritics": true,
+      "words": ["KẾ HOẠCH TRĂNG XANH", "ĐỀ ÁN SAO BĂNG", "CHUYÊN ÁN MÃ GIẢ 01", "DANH SÁCH NGUỒN MẪU"],
+      "mask": "full"
+    },
+    {
+      "id": "PII-01", "group": "personal", "title": "Số điện thoại di động Việt Nam", "severity": "S2",
+      "type": "regex", "unit": "text", "flags": "u",
+      "pattern": "(?<![\\d])(?:\\+84|84|0)[\\s.\\-]?[35789](?:[\\s.\\-]?\\d){8}(?![\\d])",
+      "mask": "middle"
+    },
+    {
+      "id": "PII-02", "group": "personal", "title": "Địa chỉ thư điện tử", "severity": "S2",
+      "type": "regex", "unit": "text", "flags": "u",
+      "pattern": "[A-Za-z0-9._%+\\-]+@[A-Za-z0-9\\-]+(?:\\.[A-Za-z0-9\\-]+)*\\.[A-Za-z]{2,}",
+      "mask": "middle"
+    },
+    {
+      "id": "PII-03", "group": "personal", "title": "Chuỗi 12 chữ số có thể là số định danh", "severity": "S2",
+      "type": "regex", "unit": "text", "flags": "u",
+      "pattern": "(?<![\\d])\\d{12}(?![\\d])",
+      "mask": "middle"
+    },
+    {
+      "id": "NET-01", "group": "network", "title": "Địa chỉ IPv4 mạng riêng", "severity": "S2",
+      "type": "regex", "unit": "text", "flags": "u",
+      "pattern": "(?<![\\d.])(?:10(?:\\.\\d{1,3}){3}|192\\.168(?:\\.\\d{1,3}){2}|172\\.(?:1[6-9]|2\\d|3[01])(?:\\.\\d{1,3}){2})(?![\\d.])",
+      "mask": "middle"
+    },
+    {
+      "id": "NET-02", "group": "network", "title": "Tên máy hoặc miền nội bộ", "severity": "S2",
+      "type": "regex", "unit": "text", "flags": "iu",
+      "pattern": "(?<![A-Za-z0-9\\-])[a-z0-9][a-z0-9\\-]*(?:\\.[a-z0-9\\-]+)*\\.(?:local|lan|internal|intranet|corp)(?![A-Za-z0-9\\-])",
+      "mask": "middle"
+    },
+    {
+      "id": "NET-03", "group": "network", "title": "Đường dẫn chia sẻ mạng hoặc thư mục người dùng", "severity": "S2",
+      "type": "regex", "unit": "text", "flags": "iu",
+      "pattern": "(?:\\\\\\\\[A-Za-z0-9_.\\-]+\\\\[^\\s\"<>|]+|[A-Z]:\\\\Users\\\\[^\\\\\\s\"<>|]+)",
+      "mask": "middle"
+    },
+    { "id": "META-01", "group": "metadata", "title": "Tên tác giả, người sửa cuối hoặc đơn vị trong thuộc tính tệp", "severity": "S1", "type": "metadata", "mask": "middle" },
+    { "id": "META-02", "group": "metadata", "title": "Đường dẫn máy hoặc tên người dùng trong thuộc tính hoặc liên kết", "severity": "S1", "type": "metadata", "mask": "middle" },
+    { "id": "META-03", "group": "metadata", "title": "Siêu liên kết ra ngoài", "severity": "S1", "type": "metadata", "mask": "middle" },
+    { "id": "META-04", "group": "metadata", "title": "Ghi chú, bình luận trong tệp", "severity": "S2", "type": "metadata", "mask": "none" },
+    { "id": "META-05", "group": "metadata", "title": "Thay đổi đang theo dõi (chèn, xóa)", "severity": "S2", "type": "metadata", "mask": "none" },
+    { "id": "META-06", "group": "metadata", "title": "Nội dung ẩn (chữ ẩn, trang chiếu ẩn, trang tính ẩn, hàng cột ẩn)", "severity": "S2", "type": "metadata", "mask": "none" },
+    { "id": "META-07", "group": "metadata", "title": "Đối tượng nhúng hoặc liên kết dữ liệu ngoài", "severity": "S2", "type": "metadata", "mask": "none" }
+  ]
+}

@@ -1,0 +1,5 @@
+export const FEEDBACK_SCHEMA = { testerPattern: '^T[0-9]{2}$', answerValues: ['co', 'mot_phan', 'khong'], clarityMin: 1, clarityMax: 5, textMin: 1, textMax: 500, versionMin: 1, versionMax: 40 } as const;
+export interface FeedbackResponse { tester_code: string; q1_self_complete: string; q2_clarity: number; q3_excess_missing: string; q4_would_use: string; q5_top_fix: string; app_version: string; rulepack_id: string }
+export function validateFeedback(value: FeedbackResponse) {
+  return new RegExp(FEEDBACK_SCHEMA.testerPattern).test(value.tester_code) && FEEDBACK_SCHEMA.answerValues.some(x => x === value.q1_self_complete) && Number.isInteger(value.q2_clarity) && value.q2_clarity >= FEEDBACK_SCHEMA.clarityMin && value.q2_clarity <= FEEDBACK_SCHEMA.clarityMax && [value.q3_excess_missing, value.q4_would_use, value.q5_top_fix].every(x => typeof x === 'string' && [...x].length >= FEEDBACK_SCHEMA.textMin && [...x].length <= FEEDBACK_SCHEMA.textMax) && [value.app_version, value.rulepack_id].every(x => x.length >= FEEDBACK_SCHEMA.versionMin && x.length <= FEEDBACK_SCHEMA.versionMax);
+}

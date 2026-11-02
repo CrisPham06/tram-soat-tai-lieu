@@ -1,0 +1,69 @@
+{
+  "command": "npm run workflow-test",
+  "at": "2026-11-02T02:26:40.776Z",
+  "code_revision": "eecf96adb098c0e463419182eaad4ff0204f7f04",
+  "node": "v24.14.0",
+  "os": "Windows_NT 10.0.26300 x64",
+  "rows": [
+    {
+      "name": "reset-focus",
+      "pass": true
+    },
+    {
+      "name": "paste-edit-focus",
+      "pass": true
+    },
+    {
+      "name": "finding-count",
+      "pass": true
+    },
+    {
+      "name": "numbered-redactions",
+      "pass": true
+    },
+    {
+      "name": "feedback-sensitive-warning",
+      "pass": true
+    },
+    {
+      "name": "axe-landmarks",
+      "pass": true
+    },
+    {
+      "name": "destination-clears-sheet-with-notice",
+      "pass": true
+    },
+    {
+      "name": "session-cancels-late-read",
+      "pass": true
+    },
+    {
+      "name": "rapid-files-latest-wins",
+      "pass": true
+    },
+    {
+      "name": "rulepack-locked-during-read",
+      "pass": true
+    },
+    {
+      "name": "file-refusals-and-boundary",
+      "pass": true
+    },
+    {
+      "name": "sheet-json-hash-theme-and-new-session",
+      "pass": true
+    },
+    {
+      "name": "paste-empty-long-and-stop",
+      "pass": true
+    },
+    {
+      "name": "rulepack-rejects-invalid-and-dangerous",
+      "pass": true
+    },
+    {
+      "name": "keyboard-drop-dialog-and-live-region",
+      "pass": true
+    }
+  ]
+}

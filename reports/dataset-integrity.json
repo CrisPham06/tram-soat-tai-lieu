@@ -1,0 +1,230 @@
+{
+  "command": "Chuẩn hóa đường dẫn, ghi nguồn bằng chứng và kiểm gói bàn giao",
+  "at": "2026-11-02T02:32:44.574Z",
+  "code_revision": "eecf96adb098c0e463419182eaad4ff0204f7f04",
+  "node": "v24.14.0",
+  "os": "Windows_NT 10.0.26300 x64",
+  "files": [
+    {
+      "id": "N01",
+      "file": "N01_txt.txt",
+      "pass": true
+    },
+    {
+      "id": "N02",
+      "file": "N02_docx.docx",
+      "pass": true
+    },
+    {
+      "id": "N03",
+      "file": "N03_xlsx.xlsx",
+      "pass": true
+    },
+    {
+      "id": "N04",
+      "file": "N04_pptx.pptx",
+      "pass": true
+    },
+    {
+      "id": "N05",
+      "file": "N05_pdf.pdf",
+      "pass": true
+    },
+    {
+      "id": "N06",
+      "file": "N06_docx.docx",
+      "pass": true
+    },
+    {
+      "id": "N07",
+      "file": "N07_pdf.pdf",
+      "pass": true
+    },
+    {
+      "id": "N08",
+      "file": "N08_xlsx.xlsx",
+      "pass": true
+    },
+    {
+      "id": "N09",
+      "file": "N09_docx.docx",
+      "pass": true
+    },
+    {
+      "id": "N10",
+      "file": "N10_txt.txt",
+      "pass": true
+    },
+    {
+      "id": "N11",
+      "file": "N11_pptx.pptx",
+      "pass": true
+    },
+    {
+      "id": "N12",
+      "file": "N12_xlsx.xlsx",
+      "pass": true
+    },
+    {
+      "id": "M01",
+      "file": "M01_txt.txt",
+      "pass": true
+    },
+    {
+      "id": "M02",
+      "file": "M02_docx.docx",
+      "pass": true
+    },
+    {
+      "id": "M03",
+      "file": "M03_pdf.pdf",
+      "pass": true
+    },
+    {
+      "id": "M04",
+      "file": "M04_pptx.pptx",
+      "pass": true
+    },
+    {
+      "id": "M05",
+      "file": "M05_xlsx.xlsx",
+      "pass": true
+    },
+    {
+      "id": "M06",
+      "file": "M06_docx.docx",
+      "pass": true
+    },
+    {
+      "id": "K01",
+      "file": "K01_txt.txt",
+      "pass": true
+    },
+    {
+      "id": "K02",
+      "file": "K02_docx.docx",
+      "pass": true
+    },
+    {
+      "id": "K03",
+      "file": "K03_pdf.pdf",
+      "pass": true
+    },
+    {
+      "id": "K04",
+      "file": "K04_xlsx.xlsx",
+      "pass": true
+    },
+    {
+      "id": "P01",
+      "file": "P01_txt.txt",
+      "pass": true
+    },
+    {
+      "id": "P02",
+      "file": "P02_docx.docx",
+      "pass": true
+    },
+    {
+      "id": "P03",
+      "file": "P03_pdf.pdf",
+      "pass": true
+    },
+    {
+      "id": "P04",
+      "file": "P04_xlsx.xlsx",
+      "pass": true
+    },
+    {
+      "id": "P05",
+      "file": "P05_pptx.pptx",
+      "pass": true
+    },
+    {
+      "id": "P06",
+      "file": "P06_docx.docx",
+      "pass": true
+    },
+    {
+      "id": "W01",
+      "file": "W01_txt.txt",
+      "pass": true
+    },
+    {
+      "id": "W02",
+      "file": "W02_docx.docx",
+      "pass": true
+    },
+    {
+      "id": "W03",
+      "file": "W03_xlsx.xlsx",
+      "pass": true
+    },
+    {
+      "id": "W04",
+      "file": "W04_pptx.pptx",
+      "pass": true
+    },
+    {
+      "id": "E01",
+      "file": "E01_docx.docx",
+      "pass": true
+    },
+    {
+      "id": "E02",
+      "file": "E02_docx.docx",
+      "pass": true
+    },
+    {
+      "id": "E03",
+      "file": "E03_docx.docx",
+      "pass": true
+    },
+    {
+      "id": "E04",
+      "file": "E04_pptx.pptx",
+      "pass": true
+    },
+    {
+      "id": "E05",
+      "file": "E05_xlsx.xlsx",
+      "pass": true
+    },
+    {
+      "id": "E06",
+      "file": "E06_pdf.pdf",
+      "pass": true
+    },
+    {
+      "id": "U01",
+      "file": "U01_docx.docx",
+      "pass": true
+    },
+    {
+      "id": "U02",
+      "file": "U02_xlsx.xlsx",
+      "pass": true
+    },
+    {
+      "id": "X01",
+      "file": "X01_docx.docx",
+      "pass": true
+    },
+    {
+      "id": "X02",
+      "file": "X02_pdf.pdf",
+      "pass": true
+    },
+    {
+      "id": "X03",
+      "file": "X03_pdf.pdf",
+      "pass": true
+    },
+    {
+      "id": "X04",
+      "file": "X04_docx.docx",
+      "pass": true
+    }
+  ],
+  "pass": true
+}

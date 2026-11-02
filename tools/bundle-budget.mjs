@@ -1,0 +1,13 @@
+import { readFileSync, readdirSync, statSync, mkdirSync, writeFileSync } from 'node:fs';
+import { join } from 'node:path';
+import { gzipSync } from 'node:zlib';
+import { createHash } from 'node:crypto';
+import { metadata } from './maintainers/meta.mjs';
+const walk = dir => readdirSync(dir, { withFileTypes: true }).flatMap(x => x.isDirectory() ? walk(join(dir, x.name)) : [join(dir, x.name)]);
+const files = walk('dist').map(path => { const bytes = readFileSync(path); return { path: path.replaceAll('\\', '/'), bytes: statSync(path).size, gzip: gzipSync(bytes).length, sha256: createHash('sha256').update(bytes).digest('hex') }; });
+const totals = { jsGzip: files.filter(x => x.path.endsWith('.js') && !/feedback/.test(x.path)).reduce((n, x) => n + x.gzip, 0), cssGzip: files.filter(x => x.path.endsWith('.css')).reduce((n, x) => n + x.gzip, 0), fontBytes: files.filter(x => x.path.endsWith('.woff2')).reduce((n, x) => n + x.bytes, 0), fontFiles: files.filter(x => x.path.endsWith('.woff2')).length };
+totals.initialGzip = totals.jsGzip + totals.cssGzip + totals.fontBytes;
+const limits = { initialGzip: 800 * 1024, jsGzip: 800 * 1024, cssGzip: 40 * 1024, fontBytes: 200 * 1024, fontFiles: 4 };
+const failures = Object.keys(limits).filter(k => totals[k] > limits[k]);
+mkdirSync('reports/checks/build', { recursive: true }); writeFileSync('reports/checks/build/bundle_info.json', JSON.stringify({ ...metadata('npm run bundle-budget'), totals, limits, failures, files }, null, 2));
+console.info(JSON.stringify({ totals, failures })); process.exitCode = failures.length ? 1 : 0;

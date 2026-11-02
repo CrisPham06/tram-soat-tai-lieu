@@ -1,0 +1,73 @@
+{
+  "command": "npm run feedback-mock",
+  "at": "2026-11-02T02:26:24.379Z",
+  "code_revision": "eecf96adb098c0e463419182eaad4ff0204f7f04",
+  "node": "v24.14.0",
+  "os": "Windows_NT 10.0.26300 x64",
+  "status": "passed",
+  "cases": [
+    "success",
+    "duplicate submit in same task",
+    "generic error",
+    "quota reached",
+    "duplicate error",
+    "offline error",
+    "invalid tester code"
+  ],
+  "requests": [
+    {
+      "method": "POST",
+      "fields": [
+        "tester_code",
+        "q1_self_complete",
+        "q2_clarity",
+        "q3_excess_missing",
+        "q4_would_use",
+        "q5_top_fix",
+        "app_version",
+        "rulepack_id"
+      ]
+    },
+    {
+      "method": "POST",
+      "fields": [
+        "tester_code",
+        "q1_self_complete",
+        "q2_clarity",
+        "q3_excess_missing",
+        "q4_would_use",
+        "q5_top_fix",
+        "app_version",
+        "rulepack_id"
+      ]
+    },
+    {
+      "method": "POST",
+      "fields": [
+        "tester_code",
+        "q1_self_complete",
+        "q2_clarity",
+        "q3_excess_missing",
+        "q4_would_use",
+        "q5_top_fix",
+        "app_version",
+        "rulepack_id"
+      ]
+    },
+    {
+      "method": "POST",
+      "fields": [
+        "tester_code",
+        "q1_self_complete",
+        "q2_clarity",
+        "q3_excess_missing",
+        "q4_would_use",
+        "q5_top_fix",
+        "app_version",
+        "rulepack_id"
+      ]
+    }
+  ],
+  "liveNetwork": false,
+  "description": "Các yêu cầu API đều được chặn và trả bằng mock trong bộ kiểm thử."
+}

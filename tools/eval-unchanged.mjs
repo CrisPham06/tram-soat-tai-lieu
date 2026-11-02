@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';
+import { readFileSync, writeFileSync } from 'node:fs';
+import { metadata } from './maintainers/meta.mjs';
+const before = JSON.parse(readFileSync(process.argv[2] || 'reports/baseline-metrics.json', 'utf8'));
+const after = JSON.parse(readFileSync('reports/metrics.json', 'utf8'));
+const keys = ['files', 'usableFiles', 'errorFiles', 'rules', 'perRule', 'groups', 'total', 'countExact', 'routing', 'rejectCorrect', 'failures'];
+const checks = keys.map(key => ({ key, equal: JSON.stringify(before[key]) === JSON.stringify(after[key]) }));
+const report = { ...metadata('npm run eval-unchanged'), checks, pass: checks.every(x => x.equal), before: { recall: before.total.recall, precision: before.total.precision }, after: { recall: after.total.recall, precision: after.total.precision }, performanceExcluded: 'Thời gian đo lại, không yêu cầu bằng số đo cũ.' };
+writeFileSync('reports/eval-unchanged.json', JSON.stringify(report, null, 2));
+assert.equal(report.pass, true, 'Dừng phát hành: số liệu khác bản đối chiếu.'); console.info(JSON.stringify({ pass: report.pass, checks: checks.length }));

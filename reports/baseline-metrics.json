@@ -1,0 +1,242 @@
+{
+  "at": "2026-11-01T03:38:25.283Z",
+  "files": 44,
+  "usableFiles": 40,
+  "errorFiles": 4,
+  "rules": 17,
+  "perRule": {
+    "MARK-01": {
+      "tp": 5,
+      "fp": 0,
+      "fn": 0,
+      "tn": 35,
+      "precision": 1,
+      "recall": 1
+    },
+    "MARK-02": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 40,
+      "precision": null,
+      "recall": null
+    },
+    "MARK-03": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "tn": 38,
+      "precision": 1,
+      "recall": 1
+    },
+    "KEYW-01": {
+      "tp": 5,
+      "fp": 0,
+      "fn": 0,
+      "tn": 35,
+      "precision": 1,
+      "recall": 1
+    },
+    "PII-01": {
+      "tp": 4,
+      "fp": 0,
+      "fn": 1,
+      "tn": 35,
+      "precision": 1,
+      "recall": 0.8
+    },
+    "PII-02": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "tn": 37,
+      "precision": 1,
+      "recall": 1
+    },
+    "PII-03": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "tn": 38,
+      "precision": 1,
+      "recall": 1
+    },
+    "NET-01": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 1,
+      "tn": 37,
+      "precision": 1,
+      "recall": 0.6666666666666666
+    },
+    "NET-02": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "tn": 39,
+      "precision": 1,
+      "recall": 1
+    },
+    "NET-03": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "tn": 39,
+      "precision": 1,
+      "recall": 1
+    },
+    "META-01": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 1,
+      "tn": 37,
+      "precision": 1,
+      "recall": 0.6666666666666666
+    },
+    "META-02": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "tn": 39,
+      "precision": 1,
+      "recall": 1
+    },
+    "META-03": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "tn": 39,
+      "precision": 1,
+      "recall": 1
+    },
+    "META-04": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "tn": 39,
+      "precision": 1,
+      "recall": 1
+    },
+    "META-05": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "tn": 39,
+      "precision": 1,
+      "recall": 1
+    },
+    "META-06": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 1,
+      "tn": 37,
+      "precision": 1,
+      "recall": 0.6666666666666666
+    },
+    "META-07": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "tn": 39,
+      "precision": null,
+      "recall": 0
+    }
+  },
+  "groups": {
+    "mark": {
+      "tp": 7,
+      "fp": 0,
+      "fn": 0,
+      "tn": 113,
+      "precision": 1,
+      "recall": 1
+    },
+    "keyword": {
+      "tp": 5,
+      "fp": 0,
+      "fn": 0,
+      "tn": 35,
+      "precision": 1,
+      "recall": 1
+    },
+    "personal": {
+      "tp": 9,
+      "fp": 0,
+      "fn": 1,
+      "tn": 110,
+      "precision": 1,
+      "recall": 0.9
+    },
+    "network": {
+      "tp": 4,
+      "fp": 0,
+      "fn": 1,
+      "tn": 115,
+      "precision": 1,
+      "recall": 0.8
+    },
+    "metadata": {
+      "tp": 8,
+      "fp": 0,
+      "fn": 3,
+      "tn": 269,
+      "precision": 1,
+      "recall": 0.7272727272727273
+    }
+  },
+  "total": {
+    "tp": 33,
+    "fp": 0,
+    "fn": 5,
+    "tn": 642,
+    "precision": 1,
+    "recall": 0.868421052631579
+  },
+  "countExact": {
+    "correct": 33,
+    "total": 38,
+    "ratio": 0.868421052631579
+  },
+  "routing": {
+    "internal": 40,
+    "national": 40,
+    "ai": 40,
+    "outside": 40
+  },
+  "rejectCorrect": 4,
+  "performanceByFormat": {
+    "txt": {
+      "samples": 30,
+      "medianMs": 0.5919,
+      "p95Ms": 1.8862,
+      "maxMs": 5.3865
+    },
+    "docx": {
+      "samples": 75,
+      "medianMs": 0.7135,
+      "p95Ms": 1.4588,
+      "maxMs": 9.7887
+    },
+    "xlsx": {
+      "samples": 45,
+      "medianMs": 0.8607,
+      "p95Ms": 1.2721,
+      "maxMs": 1.4373
+    },
+    "pptx": {
+      "samples": 30,
+      "medianMs": 0.9359,
+      "p95Ms": 9.0515,
+      "maxMs": 17.3284
+    },
+    "pdf": {
+      "samples": 40,
+      "medianMs": 2.7193,
+      "p95Ms": 5.052,
+      "maxMs": 308.2179
+    }
+  },
+  "failures": 5,
+  "code_revision": "f3033c94ad6eb4deaf830812cdcadd3e91c8adc4",
+  "revision_method": "git hash-object của git ls-tree -r HEAD -- src tests rulepacks public tại bản gốc"
+}

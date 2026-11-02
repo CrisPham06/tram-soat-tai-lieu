@@ -1,0 +1,41 @@
+import { build, loadEnv } from 'vite';
+import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
+import { createHash } from 'node:crypto';
+import { metadata } from './maintainers/meta.mjs';
+import { execFileSync } from 'node:child_process';
+import { copyFileSync, readdirSync } from 'node:fs';
+import { packageOffline } from './package-offline.mjs';
+const offline = process.argv[2] === 'offline';
+if (!offline) execFileSync(process.execPath, ['tools/build.mjs', 'offline'], { stdio: 'inherit' });
+const loadedEnv = loadEnv(offline ? 'offline' : 'production', process.cwd(), 'VITE_');
+process.env.INCLUDE_FEEDBACK = offline ? '0' : '1';
+await build({ mode: offline ? 'offline' : 'production' });
+const dir = offline ? 'dist-offline' : 'dist';
+let html = readFileSync(dir + '/index.html', 'utf8');
+const preloads = offline ? '' : readdirSync(dir + '/assets').filter(name => name.endsWith('.woff2')).map(name => `<link rel="preload" href="./assets/${name}" as="font" type="font/woff2" crossorigin>`).join('');
+if (!offline) html = html.replace('<head>', '<head>' + preloads);
+const hash = text => "'sha256-" + createHash('sha256').update(text).digest('base64') + "'";
+const scripts = offline ? [...html.matchAll(/<script[^>]*>([\s\S]*?)<\/script>/g)].map(x => hash(x[1])).join(' ') : "'self'";
+const styles = offline ? [...html.matchAll(/<style[^>]*>([\s\S]*?)<\/style>/g)].map(x => hash(x[1])).join(' ') : "'self'";
+export const csp = `default-src 'none'; script-src ${scripts}; style-src ${styles}; img-src 'self' data: blob:; font-src 'self'${offline ? ' data:' : ''}; connect-src 'none'; worker-src 'self' blob:; form-action 'none'; base-uri 'none'; object-src 'none'`;
+html = html.replace('<head>', '<head><meta http-equiv="Content-Security-Policy" content="' + csp + '">');
+if (offline) html = html.replace(/<link[^>]+rel="icon"[^>]*>/g, '');
+writeFileSync(dir + '/index.html', html);
+if (offline) writeFileSync(dir + '/tram-soat-tai-lieu.html', html);
+if (offline) packageOffline();
+else copyFileSync('dist-release/tram-soat-tai-lieu-offline.zip', 'dist/tram-soat-tai-lieu-offline.zip');
+const headers = [{ key: 'Content-Security-Policy', value: csp + "; frame-ancestors 'none'" }, { key: 'X-Content-Type-Options', value: 'nosniff' }, { key: 'Referrer-Policy', value: 'no-referrer' }, { key: 'X-Frame-Options', value: 'DENY' }, { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=(), usb=(), payment=()' }, { key: 'Cross-Origin-Opener-Policy', value: 'same-origin' }, { key: 'Cross-Origin-Resource-Policy', value: 'same-origin' }];
+if (!offline) {
+  let origin = '';
+  const feedbackUrl = process.env.VITE_SUPABASE_URL || loadedEnv.VITE_SUPABASE_URL;
+  if (feedbackUrl) { const url = new URL(feedbackUrl); if (url.protocol !== 'https:') throw new Error('Địa chỉ phản hồi cần giao thức HTTPS.'); origin = url.origin; }
+  const feedbackCsp = csp.replace("connect-src 'none'", `connect-src ${origin || "'none'"}`);
+  const feedbackHeaders = headers.map(h => h.key === 'Content-Security-Policy' ? { ...h, value: feedbackCsp + "; frame-ancestors 'none'" } : h);
+  const feedbackPath = 'dist/phan-hoi/index.html';
+  if ((await import('node:fs')).existsSync(feedbackPath)) writeFileSync(feedbackPath, readFileSync(feedbackPath, 'utf8').replace('<head>', '<head>' + preloads.replaceAll('./assets/', '../assets/') + '<meta http-equiv="Content-Security-Policy" content="' + feedbackCsp + '">'));
+  if (!origin || !(process.env.VITE_SUPABASE_ANON_KEY || loadedEnv.VITE_SUPABASE_ANON_KEY)) console.warn('Trang phản hồi chưa có cấu hình kết nối; chỉ hoạt động tải phiếu JSON.');
+  writeFileSync('vercel.json', JSON.stringify({ headers: [{ source: '/', headers }, { source: '/index.html', headers }, { source: '/phan-hoi/(.*)', headers: feedbackHeaders }, { source: '/assets/(.*)', headers: [{ key: 'Cache-Control', value: 'public, max-age=31536000, immutable' }] }, { source: '/(.*).html', headers: [{ key: 'Cache-Control', value: 'no-cache' }] }] }, null, 2));
+  writeFileSync('dist/_headers', '/\n' + headers.map(x => `  ${x.key}: ${x.value}`).join('\n') + '\n/index.html\n' + headers.map(x => `  ${x.key}: ${x.value}`).join('\n') + '\n/phan-hoi/*\n' + feedbackHeaders.map(x => `  ${x.key}: ${x.value}`).join('\n') + '\n');
+}
+mkdirSync('reports/checks/build', { recursive: true });
+writeFileSync(`reports/checks/build/${offline ? 'offline' : 'web'}_build.json`, JSON.stringify({ ...metadata(`npm run build:${offline ? 'offline' : 'web'}`), csp, htmlBytes: Buffer.byteLength(html) }, null, 2));

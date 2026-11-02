@@ -1,0 +1,102 @@
+{
+  "command": "npm run bundle-budget",
+  "at": "2026-11-02T02:28:14.009Z",
+  "code_revision": "eecf96adb098c0e463419182eaad4ff0204f7f04",
+  "node": "v24.14.0",
+  "os": "Windows_NT 10.0.26300 x64",
+  "totals": {
+    "jsGzip": 665675,
+    "cssGzip": 7103,
+    "fontBytes": 59084,
+    "fontFiles": 4,
+    "initialGzip": 731862
+  },
+  "limits": {
+    "initialGzip": 819200,
+    "jsGzip": 819200,
+    "cssGzip": 40960,
+    "fontBytes": 204800,
+    "fontFiles": 4
+  },
+  "failures": [],
+  "files": [
+    {
+      "path": "dist/assets/be-vietnam-pro-latin-400-normal-PpnXBOrz.woff2",
+      "bytes": 21168,
+      "gzip": 21174,
+      "sha256": "03d1b589cff172e1a670b3573e731d3380bc326f80cf83b0d3504e3188e2e074"
+    },
+    {
+      "path": "dist/assets/be-vietnam-pro-vietnamese-400-normal-CRcqvyg1.woff2",
+      "bytes": 11532,
+      "gzip": 11555,
+      "sha256": "dc085e2fba3414e5c5bf1e6172f921a9f81c5859946a4ed3d63c1e470d96a9e2"
+    },
+    {
+      "path": "dist/assets/feedback-CSX5TkmK.js",
+      "bytes": 222050,
+      "gzip": 57611,
+      "sha256": "3aa98389d887d9a356e9a05aacca3a7b4db537ceebf299c9267d83b135f7edbf"
+    },
+    {
+      "path": "dist/assets/fonts-DYVnuu3U.js",
+      "bytes": 245803,
+      "gzip": 77607,
+      "sha256": "e28b77920a28d313037ccc5cc865273965273b752a6006e3bb7efb0e0207b634"
+    },
+    {
+      "path": "dist/assets/fonts-l0KqegJX.css",
+      "bytes": 29863,
+      "gzip": 7103,
+      "sha256": "4910c61beeb486ff1579801d848725f72edae693cd55b044014e9b90ed2873ac"
+    },
+    {
+      "path": "dist/assets/main-s7v-R7Zy.js",
+      "bytes": 1900990,
+      "gzip": 588068,
+      "sha256": "5f1364dceaf21437443cbc22ff2dd3f3b19a983d5b4e5bd04e7c957eda09c5e5"
+    },
+    {
+      "path": "dist/assets/source-serif-4-latin-400-normal-DJ5YJwmz.woff2",
+      "bytes": 20088,
+      "gzip": 20116,
+      "sha256": "02194deb92d3975dd30e11a3824a1f1db32b48c93654e60560cb81ce8e7b5f95"
+    },
+    {
+      "path": "dist/assets/source-serif-4-vietnamese-400-normal-DFDfvBrN.woff2",
+      "bytes": 6296,
+      "gzip": 6319,
+      "sha256": "58ec5a4fb3472131b1b6ab1ede668f593381249a05069a79048558aa13ed69f6"
+    },
+    {
+      "path": "dist/favicon.svg",
+      "bytes": 195,
+      "gzip": 170,
+      "sha256": "1fe77d03cbb70044a6e1607876671a34e5d749ae7c1349eeaaa7c24b825d2524"
+    },
+    {
+      "path": "dist/index.html",
+      "bytes": 1589,
+      "gzip": 796,
+      "sha256": "e8ee66a66a45647606ab3a717366b94c6921e8ec67228a2e49b0655eecea0b1a"
+    },
+    {
+      "path": "dist/phan-hoi/index.html",
+      "bytes": 1583,
+      "gzip": 781,
+      "sha256": "8208641f017e7e6f6a297afdff6ec02f7266a60024d801142857fc9a6a8facee"
+    },
+    {
+      "path": "dist/tram-soat-tai-lieu-offline.zip",
+      "bytes": 758665,
+      "gzip": 758680,
+      "sha256": "f687aad22eb788b855fb980fe2c2e7a2caf0904fbdd12aac264c607c0cdc6c45"
+    },
+    {
+      "path": "dist/_headers",
+      "bytes": 1593,
+      "gzip": 337,
+      "sha256": "3a1f0e180ae8340c720155263909f1ed0433cb537402a1cadd52b13f6e6917ee"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+import assert from 'node:assert/strict';
+import { readFileSync, writeFileSync } from 'node:fs';
+import QRCode from 'qrcode';
+import jsQR from 'jsqr';
+import { PNG } from 'pngjs';
+import { metadata } from './meta.mjs';
+const url = 'https://tram-soat-tai-lieu.vercel.app';
+await QRCode.toFile('docs/qr-demo.png', url, { width: 1000, margin: 4, errorCorrectionLevel: 'M', color: { dark: '#2B1E1B', light: '#FFFFFF' } });
+writeFileSync('dist-release/qr.png', readFileSync('docs/qr-demo.png'));
+writeFileSync('dist-release/qr.svg', await QRCode.toString(url, { type: 'svg', margin: 4, errorCorrectionLevel: 'M' }));
+const png = PNG.sync.read(readFileSync('docs/qr-demo.png'));
+const decoded = jsQR(new Uint8ClampedArray(png.data), png.width, png.height)?.data;
+assert.equal(decoded, url);
+writeFileSync('dist-release/url.txt', url + '\n');
+writeFileSync('dist-release/qr_check.json', JSON.stringify({ ...metadata('node tools/make-qr.mjs'), expected: url, decoded, width: png.width, height: png.height, pass: decoded === url }, null, 2));
+console.info(JSON.stringify({ decoded, pass: decoded === url }));

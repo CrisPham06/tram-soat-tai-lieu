@@ -1,0 +1,63 @@
+{
+  "command": "npm run eval-unchanged",
+  "at": "2026-11-02T02:28:11.104Z",
+  "code_revision": "eecf96adb098c0e463419182eaad4ff0204f7f04",
+  "node": "v24.14.0",
+  "os": "Windows_NT 10.0.26300 x64",
+  "checks": [
+    {
+      "key": "files",
+      "equal": true
+    },
+    {
+      "key": "usableFiles",
+      "equal": true
+    },
+    {
+      "key": "errorFiles",
+      "equal": true
+    },
+    {
+      "key": "rules",
+      "equal": true
+    },
+    {
+      "key": "perRule",
+      "equal": true
+    },
+    {
+      "key": "groups",
+      "equal": true
+    },
+    {
+      "key": "total",
+      "equal": true
+    },
+    {
+      "key": "countExact",
+      "equal": true
+    },
+    {
+      "key": "routing",
+      "equal": true
+    },
+    {
+      "key": "rejectCorrect",
+      "equal": true
+    },
+    {
+      "key": "failures",
+      "equal": true
+    }
+  ],
+  "pass": true,
+  "before": {
+    "recall": 0.868421052631579,
+    "precision": 1
+  },
+  "after": {
+    "recall": 0.868421052631579,
+    "precision": 1
+  },
+  "performanceExcluded": "Thời gian đo lại, không yêu cầu bằng số đo cũ."
+}

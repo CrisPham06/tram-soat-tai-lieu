@@ -1,0 +1,33 @@
+{
+  "command": "Sinh báo cáo từ bằng chứng đã ghi",
+  "at": "2026-11-02T02:40:16.059Z",
+  "code_revision": "eecf96adb098c0e463419182eaad4ff0204f7f04",
+  "node": "v24.14.0",
+  "os": "Windows_NT 10.0.26300 x64",
+  "n": 2,
+  "averageClarity": 4,
+  "taskCompletionSource": "Số nhiệm vụ do người điều phối cung cấp trong yêu cầu; CSV chỉ lưu lựa chọn có / một phần.",
+  "timeSource": "Ước lượng của người điều phối, không bấm giờ.",
+  "responses": [
+    {
+      "app_version": "0.1.0",
+      "rulepack_id": "demo-1.0.0",
+      "tester_code": "T02",
+      "q1_self_complete": "mot_phan",
+      "q2_clarity": 3,
+      "q3_excess_missing": "Không",
+      "q4_would_use": "Có, Công cụ hữu ích",
+      "q5_top_fix": "Không"
+    },
+    {
+      "app_version": "0.1.0",
+      "rulepack_id": "demo-1.0.0",
+      "tester_code": "T01",
+      "q1_self_complete": "co",
+      "q2_clarity": 5,
+      "q3_excess_missing": "Không có",
+      "q4_would_use": "Có, công cụ này giúp phát hiện có gửi nhầm bí mật nhà nước hay không",
+      "q5_top_fix": "Có thể kiểm tra nhiều tài liệu một lúc"
+    }
+  ]
+}
